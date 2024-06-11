@@ -7,7 +7,7 @@ const Navbar = () => {
     // navbar Starts here
     <nav className='bg-white border-gray-200 dark:bg-gray-900'>
       {/* main div of navbar start */}
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4'>
+      <div className='max-w-screen-xl flex flex-wrap gap-48 items-center justify-around mx-auto p-4'>
         {/* Main logo start */}
         <Link
           to='/'

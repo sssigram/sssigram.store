@@ -16,8 +16,13 @@ const Index = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route
-        path='/'
-        element={<Layout />}></Route>
+        path=''
+        element={<Layout />}>
+        <Route
+          path='/'
+          element={<App />}
+        />
+      </Route>
     )
   );
   return <RouterProvider router={router} />;
