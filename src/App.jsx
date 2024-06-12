@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Body from "./components/Body";
 
 const App = () => {
   return (
-    <div>
+    <div className='flex flex-col items-center justify-center'>
       <Header />
-      <Main />
+      <Body />
     </div>
   );
 };

@@ -7,12 +7,12 @@ const Navbar = () => {
     // navbar Starts here
     <nav className='bg-white border-gray-200 dark:bg-gray-900'>
       {/* main div of navbar start */}
-      <div className='max-w-screen-xl flex flex-wrap gap-48 items-center justify-around mx-auto p-4'>
+      <div className='max-w-screen-xl flex flex-wrap gap-48 items-center justify-around mx-auto p-[22px]'>
         {/* Main logo start */}
         <Link
           to='/'
           className='flex items-center space-x-3 rtl:space-x-reverse'>
-          <span className='self-center text-3xl font-semibold bg-gradient-to-r from-yellow-400 from-10% to-pink-600 to-30% inline-block text-transparent bg-clip-text font-semibold whitespace-nowrap dark:text-white'>
+          <span className='self-center text-3xl font-semibold bg-gradient-to-r from-yellow-400 from-10% to-pink-600 to-30% inline-block text-transparent bg-clip-text whitespace-nowrap dark:text-white'>
             You Logo
           </span>
         </Link>
