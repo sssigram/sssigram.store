@@ -9,28 +9,28 @@ import { FaDownload } from "react-icons/fa6";
 import { FaRegPaste } from "react-icons/fa6";
 const Header = () => {
   return (
-    <div className='w-full flex flex-col justify-center items-center p-8 bg-gradient-to-bl from-red-600 via-pink-600 to-blue-600'>
+    <div className='w-full flex flex-col justify-center items-center bg-gradient-to-bl from-red-600 via-pink-600 to-blue-600 pb-8'>
       {/* Icons and titles start */}
-      <div className=' bg-white/25 rounded-md overflow-hidden flex'>
-        <div className='flex gap-2 px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+      <div className=' bg-white/25 w-full overflow-hidden flex items-center justify-center'>
+        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <MdOutlineVideoLibrary size={24} />
-          <p className='text-md'>Video</p>
+          <p className='hidden md:block text-md'>Video</p>
         </div>
-        <div className='flex gap-2 px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <PiFilmReelBold size={24} />
-          <p className='text-md'>Reel</p>
+          <p className='hidden md:block text-md'>Reel</p>
         </div>
-        <div className='flex gap-2 px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <TbPhoto size={24} />
-          <p className='text-md'>Photo</p>
+          <p className='hidden md:block text-md'>Photo</p>
         </div>
-        <div className='flex gap-2 px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <LuHistory size={24} />
-          <p className='text-md'>Story</p>
+          <p className='hidden md:block text-md'>Story</p>
         </div>
-        <div className='flex gap-2 px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white cursor-pointer hover:text-white/70 ease-in duration-300'>
           <PiTelevisionSimpleBold size={24} />
-          <p className='text-md'>Video</p>
+          <p className='hidden md:block text-md'>Video</p>
         </div>
       </div>
       {/* Icons and titles end */}
