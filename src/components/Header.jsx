@@ -37,8 +37,10 @@ const Header = () => {
 
       {/* heading and tagline start*/}
       <div className='flex flex-col gap-1.5 items-center my-6 text-white'>
-        <h2 className='text-4xl font-bold'>IGTV Video Downloader</h2>
-        <p className='text-lg'>Download Instagram IGTV Videos</p>
+        <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold'>
+          IGTV Video Downloader
+        </h2>
+        <p className='text-md sm:text-lg'>Download Instagram IGTV Videos</p>
       </div>
       {/* heading and tagline end*/}
 
