@@ -9,7 +9,7 @@ import { FaDownload } from "react-icons/fa6";
 import { FaRegPaste } from "react-icons/fa6";
 const Header = () => {
   return (
-    <div className='w-full flex flex-col justify-between items-center bg-gradient-to-bl from-red-600 via-pink-600 to-blue-600'>
+    <header className='w-full flex flex-col justify-between items-center bg-gradient-to-bl from-red-600 via-pink-600 to-blue-600'>
       {/* Icons and titles start */}
       <div className=' bg-white/25 w-full overflow-hidden flex items-center justify-center'>
         <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
@@ -45,13 +45,13 @@ const Header = () => {
       {/* heading and tagline end*/}
 
       {/* search start */}
-      <div className='w-full max-w-[672px] px-4 mb-6'>
-        <form className='flex flex-col gap-5 md:flex-row items-center justify-center mx-auto'>
+      <div className='w-full max-w-[672px] px-4 mb-4 md:mb-6'>
+        <form className='flex flex-col gap-3 sm:gap-4 md:flex-row items-center justify-center mx-auto'>
           <div className='relative w-full flex bg-white rounded-md overflow-hidden'>
             <input
               type='text'
               id='voice-search'
-              className='bg-gray-50 border border-gray-300 text-gray-900 text-xl focus:ring-blue-500 focus:border-blue-500 block w-full px-3 py-4  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+              className='bg-gray-50 border border-gray-300 text-gray-900 text-md md:text-xl focus:ring-blue-500 focus:border-blue-500 block w-full px-3 py-4  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
               placeholder='Instagram Link Here'
               required=''
             />
@@ -62,7 +62,7 @@ const Header = () => {
                 size={27}
                 className='pr-1.5'
               />
-              <span className='text-lg'>Paste</span>
+              <span className='text-md md:text-xl'>Paste</span>
             </button>
           </div>
           <button
@@ -72,12 +72,12 @@ const Header = () => {
               size={24}
               className='pr-1.5'
             />
-            <span className='text-lg'>Download</span>
+            <span className='text-md md:text-xl'>Download</span>
           </button>
         </form>
       </div>
       {/* search end */}
-    </div>
+    </header>
   );
 };
 
