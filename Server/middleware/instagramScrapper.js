@@ -2,12 +2,10 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const qs = require("qs");
 
-const getInstagramVideo = async (instagramUrl) => {
+const getInstagramVideo = async (req, res, next) => {
   const url = `https://v3.saveig.app/api/ajaxSearch`;
-
-  // q: "https://www.instagram.com/reels/C6mHdHxNOSb/",
   const data = {
-    q: `${instagramUrl}`,
+    q: `${req.body.url}`,
     t: "media",
     lang: " en",
   };
@@ -30,40 +28,16 @@ const getInstagramVideo = async (instagramUrl) => {
     "User-Agent":
       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
   };
-  // let dataAxios = [];
-  let res = await axios.post(url, qs.stringify(data), { headers });
-  let resData = res.data.data;
+  let response = await axios.post(url, qs.stringify(data), { headers });
+  let resData = response.data.data;
   const $ = cheerio.load(resData);
   const parentElement = $(".download-items");
   const downloadURL = parentElement
     .find(".download-items__btn")
     .find("a")
     .attr("href");
-  // console.log(downloadURL);
-  return downloadURL;
-
-  // let res = await axios.post("http://localhost:3001/");
-  // .then((res) => {
-  //   //   console.log(res.data.data);
-  //   const returnData = res.data.data;
-  //   const $ = cheerio.load(returnData);
-  //   const parentElement = $(".download-items");
-  //   const downloadURL = parentElement
-  //     .find(".download-items__btn")
-  //     .find("a")
-  //     .attr("href");
-  //   //   console.log(downloadURL);
-  //   return downloadURL;
-  //   // console.log(res.data.data);
-  // })
-  // .catch((err) => {
-  //   console.log(err);
-  //   return err;
-  // });
-  // console.log(res);
+  res.body = { downloadURL: downloadURL };
+  next();
 };
 
 exports.getInstagramVideo = getInstagramVideo;
-// getInstagramVideo();
-// let x = getInstagramVideo("https://www.instagram.com/reels/C6mHdHxNOSb/");
-// console.log(x);
