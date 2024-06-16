@@ -1,4 +1,7 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { useState } from "react";
+
+//react icons
+import { IoIosArrowDown } from "react-icons/io";
 
 const Accordion = () => {
   const faqData = [
@@ -21,6 +24,12 @@ const Accordion = () => {
   ];
   //selected accordion item
   const [selected, setSelected] = useState("");
+  //to close and open faqs
+  const selectFAQ = (index) => {
+    console.log(index, selected);
+    if (selected === index) return setSelected("");
+    return setSelected(index);
+  };
 
   return (
     <>
@@ -28,13 +37,20 @@ const Accordion = () => {
         ? faqData.map((faq, index) => (
             <div
               key={`faq-${index}`}
-              className='flex flex-col w-full rounded-xl overflow-hidden'>
+              className={`flex flex-col w-full rounded-xl overflow-hidden mb-2 ${
+                selected === index ? "border shadow" : null
+              }`}>
               {/* question */}
               <button
-                onMouseDown={() => setSelected(index)}
-                className='flex justify-between w-full bg-blue-500 text-white text-xl p-4 px-8'>
+                onMouseDown={() => selectFAQ(index)}
+                className='flex justify-between items-center w-full rounded-xl bg-gradient-to-r from-[#956161] via-[#af6fb2] to-[#5872a1] text-white text-xl font-medium p-3.5 px-8'>
                 <span>{faq.question}</span>
-                <span>+</span>
+                <span
+                  className={`tansition-all ease-linear duration-200 ${
+                    selected === index ? "rotate-180" : null
+                  }`}>
+                  <IoIosArrowDown />
+                </span>
               </button>
               {/* answer */}
               <div

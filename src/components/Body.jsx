@@ -79,7 +79,7 @@ const Body = () => {
       {/* download app section end */}
 
       {/* features section start */}
-      <section className='w-full p-4 bg-gradient-to-br from-[#2b1515] via-[#2c124b] to-[#182644] rounded-xl shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200'>
+      <section className='w-full p-4 bg-gradient-to-br from-[#2c1b1b] via-[#3f344c] to-[#182644] rounded-xl shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200'>
         <div className='w-full text-center md:text-start'>
           <h5 className='mb-8 text-xl md:text-3xl font-bold text-gray-300 dark:text-white text-center'>
             Main Features of ...... Instagram video Downloader:
