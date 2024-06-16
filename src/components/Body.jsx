@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 //react icons
 import { SiApple } from "react-icons/si";
 import { FaGooglePlay } from "react-icons/fa6";
+import { SiTicktick } from "react-icons/si";
 
 const Body = () => {
   return (
-    <main className='max-w-[1280px] flex flex-col gap-5 items-center justify-center'>
-      {/* block 1 start */}
+    <main className='max-w-[1280px] flex flex-col gap-5 items-center justify-center p-1'>
+      {/* section 1 start */}
       <section className='flex flex-col gap-1.5 items-center my-6 mt-20'>
         <h3 className='text-4xl font-bold mb-4 text-violet-700'>
           Download Instagram IGTV Videos
@@ -20,8 +21,8 @@ const Body = () => {
           iGram page. Finally, click the Download button. That's it!
         </p>
       </section>
-      {/* block 1 end */}
-      {/* block 2 start */}
+      {/* section 1 end */}
+      {/* section 2 start */}
       <section className='flex flex-col gap-1.5 items-center my-6 mt-10'>
         <h3 className='text-4xl font-bold mb-4 text-violet-700'>
           How to download IGTV from Instagram?
@@ -30,8 +31,8 @@ const Body = () => {
           To download IGTV videos, follow these easy steps:
         </p>
       </section>
-      {/* block 2 end */}
-      {/* download app blockstart */}
+      {/* section 2 end */}
+      {/* download app section start */}
       <section className='w-full p-4 bg-gradient-to-br from-[#e7c9c9] via-[#cfc3e0] to-[#d2dbed] rounded-xl shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700 flex flex-col md:flex-row justify-between items-center dark:text-gray-200'>
         <div className='w-full text-center md:text-start mb-4'>
           <h5 className='mb-2 text-xl md:text-2xl font-bold text-gray-900 dark:text-white'>
@@ -74,7 +75,81 @@ const Body = () => {
           </Link>
         </div>
       </section>
-      {/* download app block end */}
+      {/* download app section end */}
+
+      {/* features section start */}
+      <section className='w-full p-4 bg-gradient-to-br from-[#2b1515] via-[#2c124b] to-[#182644] rounded-xl shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200'>
+        <div className='w-full text-center md:text-start'>
+          <h5 className='mb-8 text-xl md:text-3xl font-bold text-gray-300 dark:text-white text-center'>
+            Main Features of ...... Instagram video Downloader:
+          </h5>
+          <div className='flex flex-col md:flex-row justify-around items-center md:gap-10 sm-gap-5 my-4'>
+            <ul className='mb-4 text-left text-gray-100 dark:text-gray-400'>
+              <li className='flex items-center space-x-3 rtl:space-x-reverse'>
+                <SiTicktick
+                  size={20}
+                  className='flex-shrink-0 text-purple-500 '
+                />
+                <span>
+                  Download Instagram Video with one click easily and safely in
+                  fast speed.
+                </span>
+              </li>
+              <li className='flex items-center space-x-3 rtl:space-x-reverse'>
+                <SiTicktick
+                  size={20}
+                  className='flex-shrink-0 text-purple-500 '
+                />
+                <span>
+                  Download and Save unlimited pictures from any instagram link
+                  on account with single tap.
+                </span>
+              </li>
+              <li className='flex items-center space-x-3 rtl:space-x-reverse'>
+                <SiTicktick
+                  size={20}
+                  className='flex-shrink-0 text-purple-500 '
+                />
+                <span>
+                  Download and save Instagram video from any personal account.
+                </span>
+              </li>
+            </ul>
+            <ul className='space-y-4 text-left text-gray-100 dark:text-gray-400'>
+              <li className='flex items-center space-x-3 rtl:space-x-reverse'>
+                <SiTicktick
+                  size={20}
+                  className='flex-shrink-0 text-purple-500 '
+                />
+                <span>
+                  Download Instagram content without logging in to your account.
+                </span>
+              </li>
+              <li className='flex items-center space-x-3 rtl:space-x-reverse'>
+                <SiTicktick
+                  size={20}
+                  className='flex-shrink-0 text-purple-500 '
+                />
+                <span>
+                  Videos and photos are availabe to download and save in their
+                  original resolution and quality at out website.
+                </span>
+              </li>
+              <li className='flex items-center space-x-3 rtl:space-x-reverse'>
+                <SiTicktick
+                  size={20}
+                  className='flex-shrink-0 text-purple-500 '
+                />
+                <span>
+                  We offer High speed Downloads: ..... has the fastest download
+                  speed available as compare to any other app.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      {/* features section end */}
     </main>
   );
 };
