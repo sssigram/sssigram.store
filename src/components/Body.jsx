@@ -5,10 +5,11 @@ import { SiApple } from "react-icons/si";
 import { FaGooglePlay } from "react-icons/fa6";
 import { SiTicktick } from "react-icons/si";
 import Accordion from "./Accordion";
+import BodyContainer from "./BodyContainer";
 
 const Body = () => {
   return (
-    <main className='max-w-[1280px] flex flex-col gap-5 items-center justify-center lg:p-6 md:p-4 sm:p-3 p-2'>
+    <BodyContainer>
       {/* section 1 start */}
       <section className='flex flex-col gap-1.5 items-center my-6 mt-20'>
         <h3 className='text-4xl font-bold mb-4 text-violet-700'>
@@ -82,7 +83,7 @@ const Body = () => {
       <section className='w-full p-4 bg-gradient-to-br from-[#2c1b1b] via-[#3f344c] to-[#182644] rounded-xl shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200'>
         <div className='w-full text-center md:text-start'>
           <h5 className='mb-8 text-xl md:text-3xl font-bold text-gray-300 dark:text-white text-center'>
-            Main Features of ...... Instagram video Downloader:
+            BodyContainer Features of ...... Instagram video Downloader:
           </h5>
           <div className='flex flex-col md:flex-row justify-around items-center md:gap-10 sm-gap-5 my-4'>
             <ul className='mb-4 text-left text-gray-100 dark:text-gray-400'>
@@ -156,7 +157,7 @@ const Body = () => {
       </div>
 
       {/* FAQ section start */}
-    </main>
+    </BodyContainer>
   );
 };
 

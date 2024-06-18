@@ -7,15 +7,18 @@ import { LuHistory } from "react-icons/lu";
 import { PiTelevisionSimpleBold } from "react-icons/pi";
 import { FaDownload } from "react-icons/fa6";
 import { FaRegPaste } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className='w-full flex flex-col justify-between items-center bg-gradient-to-bl from-red-600 via-pink-600 to-blue-600'>
       {/* Icons and titles start */}
       <div className=' bg-white/25 w-full overflow-hidden flex items-center justify-center'>
-        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+        <Link
+          to={"/video"}
+          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <MdOutlineVideoLibrary size={24} />
           <p className='hidden md:block text-md'>Video</p>
-        </div>
+        </Link>
         <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <PiFilmReelBold size={24} />
           <p className='hidden md:block text-md'>Reel</p>

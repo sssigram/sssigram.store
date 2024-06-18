@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
 //
 import {
@@ -11,6 +10,8 @@ import {
 } from "react-router-dom";
 //components
 import Layout from "./Layout.jsx";
+import App from "./App.jsx";
+import Video from "./pages/Video.jsx";
 
 const Index = () => {
   const router = createBrowserRouter(
@@ -21,6 +22,10 @@ const Index = () => {
         <Route
           path='/'
           element={<App />}
+        />
+        <Route
+          path='/video'
+          element={<Video />}
         />
       </Route>
     )
