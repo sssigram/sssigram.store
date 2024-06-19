@@ -1,27 +1,10 @@
 import React, { useState } from "react";
-
+import { faqData } from "../data/faqData";
 //react icons
 import { IoIosArrowDown } from "react-icons/io";
+import Heading from "./prime-components/Heading";
 
 const Accordion = () => {
-  const faqData = [
-    {
-      question: "What is an instagram video downloader?",
-      answer: `It's an online tool that allows you to download Instagram photos, videos, and IGTV videos. In case you need to use it later. SnapInta is the best tool for downloading from Instagram.
-    `,
-    },
-    {
-      question: "Do I need instagram account to download video?",
-      answer: `No, you don't need to log in to your account, Snapinsta Does not ask for any information from you, so you can download anything from Instagram securely, anonymously.
-    `,
-    },
-    {
-      question: "Can I save videos on my instagram account?",
-      answer: `Unfortunately, Instagram doesn't allow you to download videos you find on your feed or on other users' stories. And luckily you already have us, just visit our website: https://snapinsta.app and follow the instructions.
-    `,
-    },
-    // { question: "", answer: "" },
-  ];
   //selected accordion item
   const [selected, setSelected] = useState("");
   //to close and open faqs
@@ -32,11 +15,17 @@ const Accordion = () => {
   };
 
   return (
-    <>
+    <div>
+      <Heading>Frequently asked questions(FAQ)</Heading>
+      <p className='mb-5 text-center'>
+        This FAQ provides information on frequent questions or concerns about
+        the igram . world downloader . if you can't find the answer to your
+        question, feel free to ask through email on our contact page
+      </p>
       {faqData && faqData.length
         ? faqData.map((faq, index) => (
             <div
-              key={`faq-${index}`}
+              key={`faq-${faq.id}`}
               className={`flex flex-col w-full rounded-xl overflow-hidden mb-2 ${
                 selected === index ? "border shadow" : null
               }`}>
@@ -64,7 +53,7 @@ const Accordion = () => {
             </div>
           ))
         : null}
-    </>
+    </div>
   );
 };
 
