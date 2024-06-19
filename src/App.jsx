@@ -1,21 +1,24 @@
 import React from "react";
 //component importHeading
 import Header from "./components/Header";
-import Body from "./components/Body";
 import HowToDownload from "./components/HowToDownload";
 import FeatureCard from "./components/FeatureCard";
 import Heading from "./components/prime-components/Heading";
 import BodyContainer from "./components/BodyContainer";
 import FeatureSection from "./components/FeatureSection";
-import Accordion from "./components/Accordion";
+import FAQs from "./components/FAQs";
 import DownloadApp from "./components/DownloadApp";
+import { allFeatureCardData } from "./data/featureCard";
 
 const App = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
-      <Header />
+      <Header
+        heading='Instagram Downloader'
+        desc='Download Videos, Reels, Photos, IGTV, carousel from Instagram'
+      />
       <BodyContainer>
-        <div className='flex flex-col gap-1.5 items-center my-6 mt-20'>
+        <div className='flex flex-col gap-1.5 items-center my-6'>
           <h3 className='text-4xl font-bold mb-4 text-violet-700'>
             Download Instagram IGTV Videos
           </h3>
@@ -28,16 +31,22 @@ const App = () => {
           </p>
         </div>
         {/* How to download section start */}
-        <Heading>HOW TO DOWNLOAD ANYTHING FROM INSTAGRAM?</Heading>
+        <div>
+          <Heading>HOW TO DOWNLOAD ANYTHING FROM INSTAGRAM?</Heading>
+          <p className='text-lg text-center'>
+            Below are the three easy and quickest steps to download an Instagram
+            Anything:
+          </p>
+        </div>
         <HowToDownload />
         {/* How to download section end */}
 
         {/* featureCard section start */}
         <Heading>Your Instagram Video Downloader Features</Heading>
-        <FeatureCard />
+        <FeatureCard data={allFeatureCardData} />
         {/* featureCard section end */}
         <FeatureSection />
-        <Accordion />
+        <FAQs />
         <DownloadApp />
       </BodyContainer>
     </div>

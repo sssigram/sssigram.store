@@ -4,8 +4,8 @@ import { faqData } from "../data/faqData";
 import { IoIosArrowDown } from "react-icons/io";
 import Heading from "./prime-components/Heading";
 
-const Accordion = () => {
-  //selected accordion item
+const FAQs = () => {
+  //selected FAQs item
   const [selected, setSelected] = useState("");
   //to close and open faqs
   const selectFAQ = (index) => {
@@ -57,4 +57,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default FAQs;

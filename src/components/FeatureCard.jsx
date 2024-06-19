@@ -1,11 +1,9 @@
 import React from "react";
-import { featureCardData } from "../data/featureCard";
-
-const FeatureCard = () => {
+const FeatureCard = ({ data }) => {
   return (
-    <div className='grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 lg:gap-8'>
-      {featureCardData && featureCardData.length
-        ? featureCardData.map((card) => (
+    <div className='grid grid-flow-row grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 lg:gap-8 mb-5'>
+      {data && data.length
+        ? data.map((card) => (
             <div
               key={card.id}
               className='max-w-[480px] sm:max-w-[360px] lg:max-w-[310px] bg-white border rounded-lg shadow-md shadow-gray-200 dark:bg-gray-800 dark:border-gray-700'>

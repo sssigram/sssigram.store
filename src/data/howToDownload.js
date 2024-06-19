@@ -9,7 +9,7 @@ export const howToDownloadData = [
     id: "howToDownload_2",
     image: "https://igram.world/img/how-to/paste-url.png",
     title: "Paste the link",
-    description: `Return to the Igram website, paste the link into the input field at the top of the screen and click the “Download” button.`,
+    description: `Return to the your_domain website, paste the link into the input field at the top of the screen and click the “Download” button.`,
   },
   {
     id: "howToDownload_3",

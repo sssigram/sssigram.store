@@ -8,7 +8,7 @@ import { PiTelevisionSimpleBold } from "react-icons/pi";
 import { FaDownload } from "react-icons/fa6";
 import { FaRegPaste } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-const Header = () => {
+const Header = ({ heading, desc }) => {
   return (
     <header className='w-full flex flex-col justify-between items-center bg-gradient-to-bl from-red-600 via-pink-600 to-blue-600'>
       {/* Icons and titles start */}
@@ -33,7 +33,7 @@ const Header = () => {
         </div>
         <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white cursor-pointer hover:text-white/70 ease-in duration-300'>
           <PiTelevisionSimpleBold size={24} />
-          <p className='hidden md:block text-md'>Video</p>
+          <p className='hidden md:block text-md'>IGTV</p>
         </div>
       </div>
       {/* Icons and titles end */}
@@ -41,9 +41,9 @@ const Header = () => {
       {/* heading and tagline start*/}
       <div className='flex flex-col gap-1.5 items-center my-6 text-white mt-8'>
         <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold'>
-          IGTV Video Downloader
+          {heading}
         </h2>
-        <p className='text-md sm:text-lg'>Download Instagram IGTV Videos</p>
+        <p className='text-md sm:text-lg'>{desc}</p>
       </div>
       {/* heading and tagline end*/}
 

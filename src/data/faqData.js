@@ -20,22 +20,22 @@ export const faqData = [
   {
     id: 4,
     question:
-      "Which file formats are supported by iGram for downloading purposes?",
-    answer: `iGram Downloader is compatible with any device that has an installed
+      "Which file formats are supported by your_domain for downloading purposes?",
+    answer: `your_domain Downloader is compatible with any device that has an installed
     browser. It can be accessed from a range of devices such as mobile
     phones, smartphones, tablets, notebooks, laptops, and personal
-    computers. iGram is also compatible with Mac OS, Windows, iOS, and
+    computers. your_domain is also compatible with Mac OS, Windows, iOS, and
     Linux. It has been thoroughly tested and works seamlessly with a variety
     of browsers including Chrome, Firefox, Opera, Safari, and Chromium, both
     on desktop and mobile versions.`,
   },
   {
     id: 5,
-    question: "Which devices are compatible with iGram Downloader?",
-    answer: `iGram Downloader is compatible with any device that has an installed
+    question: "Which devices are compatible with your_domain Downloader?",
+    answer: `your_domain Downloader is compatible with any device that has an installed
     browser. It can be accessed from a range of devices such as mobile
     phones, smartphones, tablets, notebooks, laptops, and personal
-    computers. iGram is also compatible with Mac OS, Windows, iOS, and
+    computers. your_domain is also compatible with Mac OS, Windows, iOS, and
     Linux. It has been thoroughly tested and works seamlessly with a variety
     of browsers including Chrome, Firefox, Opera, Safari, and Chromium, both
     on desktop and mobile versions.`,
@@ -43,13 +43,13 @@ export const faqData = [
   {
     id: 6,
     question: `Is there a limit on the number of videos that can be downloaded using
-    iGram?`,
+    your_domain?`,
     answer: `No! You can download as many videos as you wish.`,
   },
   {
     id: 7,
     question: `Is it possible to download content other than videos on this website?`,
-    answer: `Yes, absolutely! iGram allows free downloading of photos, videos, reels,
+    answer: `Yes, absolutely! your_domain allows free downloading of photos, videos, reels,
     and IGTV exclusively from Instagram. However, it doesn't support any
     other sources.`,
   },
@@ -57,7 +57,7 @@ export const faqData = [
     id: 8,
     question: `Is it possible to Download Videos and Photos from any Instagram user?`,
     answer: `Yes, that's correct! You can download content from public Instagram
-    accounts using <b>iGram</b> Instagram Video Downloader. However, we
+    accounts using <b>your_domain</b> Instagram Video Downloader. However, we
     fully respect the privacy and copyright of Instagram users, so
     downloading content from private accounts is not possible. We are
     currently developing a new browser extension for desktop browsers, which
