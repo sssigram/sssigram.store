@@ -12,7 +12,10 @@ const App = () => {
     <div className='flex flex-col items-center justify-center'>
       <Header />
       <BodyContainer>
+        {/* How to download section start */}
+        <Heading>HOW TO DOWNLOAD ANYTHING FROM INSTAGRAM?</Heading>
         <HowToDownload />
+        {/* How to download section end */}
 
         {/* feature section start */}
         <Heading>Your Instagram Video Downloader Features</Heading>
