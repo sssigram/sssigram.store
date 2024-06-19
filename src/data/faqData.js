@@ -174,3 +174,75 @@ export const faqPhotoPage = [
       "SnapInta is compatible with all devices, including desktops, laptops, smartphones, and tablets. You can download Instagram photos from any device with internet access.",
   },
 ];
+
+export const faqReelPage = [
+  {
+    id: 1,
+    question: "What is an Instagram Reels downloader?",
+    answer:
+      "It's an online tool that allows you to download Instagram Reels videos to your device. SnapInta is the best tool for downloading Reels from Instagram.",
+  },
+  {
+    id: 2,
+    question:
+      "How does SnapInta enhance the experience of viewing Reels offline?",
+    answer:
+      "SnapInta allows you to download and save Instagram Reels, so you can watch them offline anytime, anywhere, without needing an internet connection.",
+  },
+  {
+    id: 3,
+    question:
+      "Can I use SnapInta to compile a personal collection of favorite Reels?",
+    answer:
+      "Absolutely! SnapInta enables you to download and organize your favorite Reels into a personal collection, making it easy to revisit and enjoy them later.",
+  },
+  {
+    id: 4,
+    question:
+      "What makes SnapInta a better choice compared to other Instagram Reels downloaders?",
+    answer:
+      "SnapInta stands out with its fast download speeds, high-quality video retention, and user-friendly interface, making it the top choice for downloading Instagram Reels.",
+  },
+  {
+    id: 5,
+    question:
+      "How does SnapInta ensure the privacy and security of downloaded Reels?",
+    answer:
+      "SnapInta prioritizes user privacy and security by not storing any personal data or downloaded content on its servers, ensuring a safe downloading experience.",
+  },
+];
+
+export const faqIGTVData = [
+  {
+    id: 1,
+    question: "What is an Instagram IGTV downloader?",
+    answer:
+      "It's an online tool that allows you to download Instagram IGTV videos to your device. SnapInta is the best tool for downloading IGTV content from Instagram.",
+  },
+  {
+    id: 2,
+    question:
+      "How can SnapInta help me watch IGTV videos without an internet connection?",
+    answer:
+      "SnapInta lets you download IGTV videos, so you can watch them offline anytime, even without an internet connection. Perfect for enjoying content on the go.",
+  },
+  {
+    id: 3,
+    question: "Can I create a personal library of IGTV videos using SnapInta?",
+    answer:
+      "Yes, SnapInta allows you to download and save IGTV videos, enabling you to build a personal library of your favorite content for easy access and viewing.",
+  },
+  {
+    id: 4,
+    question: "What sets SnapInta apart from other IGTV downloaders?",
+    answer:
+      "SnapInta excels with its high-speed downloads, maintaining original video quality, and an intuitive interface, making it the preferred choice for IGTV video downloading.",
+  },
+  {
+    id: 5,
+    question:
+      "How does SnapInta ensure my privacy and security when downloading IGTV videos?",
+    answer:
+      "SnapInta is designed with user privacy in mind, not storing any personal data or downloaded videos on its servers, ensuring a secure downloading experience.",
+  },
+];

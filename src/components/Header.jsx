@@ -19,10 +19,12 @@ const Header = ({ heading, desc }) => {
           <MdOutlineVideoLibrary size={24} />
           <p className='hidden md:block text-md'>Video</p>
         </Link>
-        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+        <Link
+          to='/reel'
+          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <PiFilmReelBold size={24} />
           <p className='hidden md:block text-md'>Reel</p>
-        </div>
+        </Link>
         <Link
           to='/photo'
           className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
@@ -30,15 +32,17 @@ const Header = ({ heading, desc }) => {
           <p className='hidden md:block text-md'>Photo</p>
         </Link>
         <Link
-          to={"/story"}
+          to='/story'
           className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <LuHistory size={24} />
           <p className='hidden md:block text-md'>Story</p>
         </Link>
-        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white cursor-pointer hover:text-white/70 ease-in duration-300'>
+        <Link
+          to='/igtv'
+          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white cursor-pointer hover:text-white/70 ease-in duration-300'>
           <PiTelevisionSimpleBold size={24} />
           <p className='hidden md:block text-md'>IGTV</p>
-        </div>
+        </Link>
       </div>
       {/* Icons and titles end */}
 

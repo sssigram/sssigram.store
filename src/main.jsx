@@ -14,6 +14,8 @@ import App from "./App.jsx";
 import Video from "./pages/Video.jsx";
 import Story from "./pages/Story.jsx";
 import Photo from "./pages/Photo.jsx";
+import Reel from "./pages/Reel.jsx";
+import IGTV from "./pages/IGTV.jsx";
 
 const Index = () => {
   const router = createBrowserRouter(
@@ -36,6 +38,14 @@ const Index = () => {
         <Route
           path='/photo'
           element={<Photo />}
+        />
+        <Route
+          path='/reel'
+          element={<Reel />}
+        />
+        <Route
+          path='/igtv'
+          element={<IGTV />}
         />
       </Route>
     )

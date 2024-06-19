@@ -3,17 +3,14 @@ import Header from "../components/Header";
 import Heading from "../components/prime-components/Heading";
 import BodyContainer from "../components/BodyContainer";
 import HowToDownload from "../components/HowToDownload";
-import {
-  photoFeatureCardData,
-  storyFeatureCardData,
-} from "../data/featureCard";
+import { photoFeatureCardData } from "../data/featureCard";
 import FeatureCard from "../components/FeatureCard";
 import DownloadApp from "../components/DownloadApp";
 import FeatureSection from "../components/FeatureSection";
 import FAQs from "../components/FAQs";
-import { howToDownloadData, howToDownloadStory } from "../data/howToDownload";
-import { faqPhotoPage, faqStoryPage } from "../data/faqData";
-const Story = () => {
+import { howToDownloadData } from "../data/howToDownload";
+import { faqPhotoPage } from "../data/faqData";
+const Photo = () => {
   return (
     <div className='flex flex-col items-center justify-center'>
       <Header
@@ -47,4 +44,4 @@ const Story = () => {
   );
 };
 
-export default Story;
+export default Photo;
