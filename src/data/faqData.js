@@ -140,3 +140,37 @@ export const faqStoryPage = [
       "Our downloader is super reliable! We've been trusted by millions of users worldwide, and we're committed to keeping your data safe and secure.",
   },
 ];
+
+export const faqPhotoPage = [
+  {
+    id: 1,
+    question: "What is an Instagram photo downloader?",
+    answer:
+      "It's an online tool that allows you to download Instagram photos, videos, and IGTV videos. In case you need to use it later. SnapInta is the best tool for downloading from Instagram.",
+  },
+  {
+    id: 2,
+    question: "How can I save my favorite Instagram photos?",
+    answer:
+      "With an Instagram photo downloader like SnapInta, you can easily save your favorite photos by simply entering the URL of the post. It's fast and efficient.",
+  },
+  {
+    id: 3,
+    question: "Is using an Instagram photo downloader legal?",
+    answer:
+      "Yes, using an Instagram photo downloader is legal as long as you respect copyright laws and the terms of service of Instagram. Always ensure you have permission to download and use the content.",
+  },
+  {
+    id: 4,
+    question: "Can I download photos from Instagram stories?",
+    answer:
+      "Yes, SnapInta allows you to download photos not only from regular posts but also from Instagram stories, making it a versatile tool for all types of content.",
+  },
+  {
+    id: 5,
+    question:
+      "What devices are compatible with SnapInta for downloading photos?",
+    answer:
+      "SnapInta is compatible with all devices, including desktops, laptops, smartphones, and tablets. You can download Instagram photos from any device with internet access.",
+  },
+];

@@ -23,10 +23,12 @@ const Header = ({ heading, desc }) => {
           <PiFilmReelBold size={24} />
           <p className='hidden md:block text-md'>Reel</p>
         </div>
-        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+        <Link
+          to='/photo'
+          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <TbPhoto size={24} />
           <p className='hidden md:block text-md'>Photo</p>
-        </div>
+        </Link>
         <Link
           to={"/story"}
           className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
