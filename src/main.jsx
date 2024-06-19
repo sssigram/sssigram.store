@@ -12,6 +12,7 @@ import {
 import Layout from "./Layout.jsx";
 import App from "./App.jsx";
 import Video from "./pages/Video.jsx";
+import Story from "./pages/Story.jsx";
 
 const Index = () => {
   const router = createBrowserRouter(
@@ -26,6 +27,10 @@ const Index = () => {
         <Route
           path='/video'
           element={<Video />}
+        />
+        <Route
+          path='/story'
+          element={<Story />}
         />
       </Route>
     )

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { howToDownloadData } from "../data/howToDownload";
 
-const HowToDownload = () => {
+const HowToDownload = ({ data }) => {
   const mediaMatch = window.matchMedia("(min-width: 768px)");
   const [matches, setMatches] = useState(mediaMatch.matches);
   useEffect(() => {
@@ -39,8 +38,8 @@ const HowToDownload = () => {
   };
   return (
     <div className='flex flex-col items-center'>
-      {howToDownloadData && howToDownloadData.length
-        ? howToDownloadData.map((dataItem, index) => (
+      {data && data.length
+        ? data.map((dataItem, index) => (
             <HowToDownloadCard
               key={dataItem.id}
               data={dataItem}

@@ -1,83 +1,142 @@
 export const faqData = [
   {
     id: 1,
-    question: "What is an instagram video downloader?",
-    answer: `It's an online tool that allows you to download Instagram photos, videos, and IGTV videos. In case you need to use it later. SnapInta is the best tool for downloading from Instagram.
-    `,
+    question: "What is an Instagram video downloader?",
+    answer:
+      "It's an online tool that allows you to download Instagram photos, videos, and IGTV videos. In case you need to use it later. SnapInta is the best tool for downloading from Instagram.",
   },
   {
     id: 2,
-    question: "Do I need instagram account to download video?",
-    answer: `No, you don't need to log in to your account, Snapinsta Does not ask for any information from you, so you can download anything from Instagram securely, anonymously.
-    `,
+    question: "How does an Instagram downloader work?",
+    answer:
+      "An Instagram downloader works by taking the URL of the Instagram post you want to download and converting it into a downloadable format. It’s a quick and easy way to save your favorite content.",
   },
   {
     id: 3,
-    question: "Can I save videos on my instagram account?",
-    answer: `Unfortunately, Instagram doesn't allow you to download videos you find on your feed or on other users' stories. And luckily you already have us, just visit our website: https://snapinsta.app and follow the instructions.
-    `,
+    question: "Is it free to use an Instagram downloader?",
+    answer:
+      "Yes, most Instagram downloaders, including SnapInta, are free to use. You can download as many videos and photos as you like without any cost.",
   },
   {
     id: 4,
-    question:
-      "Which file formats are supported by your_domain for downloading purposes?",
-    answer: `your_domain Downloader is compatible with any device that has an installed
-    browser. It can be accessed from a range of devices such as mobile
-    phones, smartphones, tablets, notebooks, laptops, and personal
-    computers. your_domain is also compatible with Mac OS, Windows, iOS, and
-    Linux. It has been thoroughly tested and works seamlessly with a variety
-    of browsers including Chrome, Firefox, Opera, Safari, and Chromium, both
-    on desktop and mobile versions.`,
+    question: "Can I download IGTV videos with an Instagram downloader?",
+    answer:
+      "Absolutely! An Instagram downloader like SnapInta allows you to download not just regular videos and photos but also IGTV videos, making it versatile and comprehensive.",
   },
   {
     id: 5,
-    question: "Which devices are compatible with your_domain Downloader?",
-    answer: `your_domain Downloader is compatible with any device that has an installed
-    browser. It can be accessed from a range of devices such as mobile
-    phones, smartphones, tablets, notebooks, laptops, and personal
-    computers. your_domain is also compatible with Mac OS, Windows, iOS, and
-    Linux. It has been thoroughly tested and works seamlessly with a variety
-    of browsers including Chrome, Firefox, Opera, Safari, and Chromium, both
-    on desktop and mobile versions.`,
+    question: "Is it safe to use an Instagram downloader?",
+    answer:
+      "Yes, using a trusted Instagram downloader like SnapInta is safe. It ensures your privacy and doesn't require any personal information or login details.",
   },
   {
     id: 6,
-    question: `Is there a limit on the number of videos that can be downloaded using
-    your_domain?`,
-    answer: `No! You can download as many videos as you wish.`,
+    question:
+      "Do I need to install any software to use an Instagram downloader?",
+    answer:
+      "No, you don't need to install any software. SnapInta and similar tools are web-based, so you can download Instagram content directly from your browser.",
   },
   {
     id: 7,
-    question: `Is it possible to download content other than videos on this website?`,
-    answer: `Yes, absolutely! your_domain allows free downloading of photos, videos, reels,
-    and IGTV exclusively from Instagram. However, it doesn't support any
-    other sources.`,
+    question: "Can I use an Instagram downloader on my mobile device?",
+    answer:
+      "Yes, most Instagram downloaders, including SnapInta, are mobile-friendly and can be used on smartphones and tablets for downloading Instagram content on the go.",
   },
   {
     id: 8,
-    question: `Is it possible to Download Videos and Photos from any Instagram user?`,
-    answer: `Yes, that's correct! You can download content from public Instagram
-    accounts using <b>your_domain</b> Instagram Video Downloader. However, we
-    fully respect the privacy and copyright of Instagram users, so
-    downloading content from private accounts is not possible. We are
-    currently developing a new browser extension for desktop browsers, which
-    will allow you to download private posts directly from Instagram.`,
+    question: "What formats are supported by Instagram downloaders?",
+    answer:
+      "Instagram downloaders typically support common formats like MP4 for videos and JPEG for photos, ensuring compatibility with most devices and media players.",
   },
   {
     id: 9,
-    question: `What is the maximum quality of images and videos that can be downloaded
-    from Instagram?`,
-    answer: `The resolution and quality of the downloaded photos and videos depend on
-    the original uploaded content on Instagram. Typically, the highest
-    resolution for images is 1080x1350 pixels, which is the limit set by
-    Instagram. For videos, the quality is usually in high definition (720p).`,
+    question: "How fast can I download Instagram content?",
+    answer:
+      "With a reliable tool like SnapInta, you can download Instagram content almost instantly. The speed depends on your internet connection, but the process is designed to be quick and efficient.",
   },
   {
     id: 10,
-    question: `Is it permissible to download Instagram Reels?`,
-    answer: `Yes. In brief, it is feasible to <b>download Instagram Reels</b>, and it
-    can be done effortlessly through your smartphone. However, Reels can
-    only be downloaded for personal use, and it's permissible to download
-    them as long as they are not used for commercial purposes.`,
+    question: "Why should I use SnapInta for downloading Instagram content?",
+    answer:
+      "SnapInta is user-friendly, fast, and reliable. It offers high-quality downloads of Instagram photos, videos, and IGTV content without any hassle, making it the best choice for all your Instagram downloading needs.",
+  },
+];
+
+export const faqVideoData = [
+  {
+    id: 1,
+    question: "What is an Instagram video downloader?",
+    answer:
+      "It's an online tool that allows you to download Instagram photos, videos, and IGTV videos. In case you need to use it later. SnapInta is the best tool for downloading from Instagram.",
+  },
+  {
+    id: 2,
+    question: "Why should I use an Instagram video downloader?",
+    answer:
+      "An Instagram video downloader like SnapInta helps you save your favorite Instagram videos and photos for offline viewing, sharing, and keeping a personal collection of inspiring content.",
+  },
+  {
+    id: 3,
+    question: "Can I download content from private Instagram accounts?",
+    answer:
+      "Yes, with SnapInta, you can download videos and photos from private accounts, provided you have access to view the content, ensuring you can save any content you enjoy.",
+  },
+  {
+    id: 4,
+    question: "What makes SnapInta the best Instagram video downloader?",
+    answer:
+      "SnapInta stands out due to its user-friendly interface, high-speed downloads, and ability to maintain the original quality of photos and videos. It's the ideal tool for all your Instagram downloading needs.",
+  },
+  {
+    id: 5,
+    question: "Is there a limit to how many videos I can download?",
+    answer:
+      "No, SnapInta allows you to download an unlimited number of Instagram videos and photos without any restrictions, so you can save as much content as you want.",
+  },
+];
+
+export const faqStoryPage = [
+  {
+    id: 1,
+    question: "What is an Instagram Story Downloader?",
+    answer:
+      "It's a game-changer! An Instagram Story Downloader allows you to save and download your favorite Instagram stories and highlights, giving you permanent access to your precious memories.",
+  },
+  {
+    id: 2,
+    question: "How does the Instagram Story Downloader work?",
+    answer:
+      "Our downloader is super easy to use! Simply enter the username or URL of the account you want to download from, and our tool will do the rest.",
+  },
+  {
+    id: 3,
+    question: "Is my data safe with the Instagram Story Downloader?",
+    answer:
+      "Absolutely! We take your data security very seriously. Our downloader is completely secure and protects your personal information.",
+  },
+  {
+    id: 4,
+    question: "Can I download multiple stories at once?",
+    answer:
+      "Yes! Our downloader allows you to download multiple stories simultaneously, saving you time and effort.",
+  },
+  {
+    id: 6,
+    question: "Can I use the Instagram Story Downloader on my mobile device?",
+    answer:
+      "Yes! Our downloader is fully compatible with both desktop and mobile devices, making it easy to access your saved stories anywhere, anytime.",
+  },
+
+  {
+    id: 9,
+    question: "Is the Instagram Story Downloader free?",
+    answer:
+      "Yes! Our downloader is completely free to use, with no hidden costs or fees.",
+  },
+  {
+    id: 10,
+    question: "How reliable is the Instagram Story Downloader?",
+    answer:
+      "Our downloader is super reliable! We've been trusted by millions of users worldwide, and we're committed to keeping your data safe and secure.",
   },
 ];

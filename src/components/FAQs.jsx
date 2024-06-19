@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { faqData } from "../data/faqData";
 //react icons
 import { IoIosArrowDown } from "react-icons/io";
 import Heading from "./prime-components/Heading";
 
-const FAQs = () => {
+const FAQs = ({ data }) => {
   //selected FAQs item
   const [selected, setSelected] = useState("");
   //to close and open faqs
@@ -22,8 +21,8 @@ const FAQs = () => {
         the igram . world downloader . if you can't find the answer to your
         question, feel free to ask through email on our contact page
       </p>
-      {faqData && faqData.length
-        ? faqData.map((faq, index) => (
+      {data && data.length
+        ? data.map((faq, index) => (
             <div
               key={`faq-${faq.id}`}
               className={`flex flex-col w-full rounded-xl overflow-hidden mb-2 ${

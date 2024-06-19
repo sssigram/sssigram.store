@@ -27,10 +27,12 @@ const Header = ({ heading, desc }) => {
           <TbPhoto size={24} />
           <p className='hidden md:block text-md'>Photo</p>
         </div>
-        <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+        <Link
+          to={"/story"}
+          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <LuHistory size={24} />
           <p className='hidden md:block text-md'>Story</p>
-        </div>
+        </Link>
         <div className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white cursor-pointer hover:text-white/70 ease-in duration-300'>
           <PiTelevisionSimpleBold size={24} />
           <p className='hidden md:block text-md'>IGTV</p>

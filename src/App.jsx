@@ -9,6 +9,8 @@ import FeatureSection from "./components/FeatureSection";
 import FAQs from "./components/FAQs";
 import DownloadApp from "./components/DownloadApp";
 import { allFeatureCardData } from "./data/featureCard";
+import { howToDownloadData } from "./data/howToDownload";
+import { faqData } from "./data/faqData";
 
 const App = () => {
   return (
@@ -38,7 +40,7 @@ const App = () => {
             Anything:
           </p>
         </div>
-        <HowToDownload />
+        <HowToDownload data={howToDownloadData} />
         {/* How to download section end */}
 
         {/* featureCard section start */}
@@ -46,7 +48,7 @@ const App = () => {
         <FeatureCard data={allFeatureCardData} />
         {/* featureCard section end */}
         <FeatureSection />
-        <FAQs />
+        <FAQs data={faqData} />
         <DownloadApp />
       </BodyContainer>
     </div>
