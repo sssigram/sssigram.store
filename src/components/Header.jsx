@@ -10,11 +10,13 @@ import { FaRegPaste } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useInstagram } from "../context/InstagramContext";
 const Header = ({ heading, desc }) => {
-  const { getDownloadURL } = useInstagram();
+  const { getDownloadURL, instagramState, dispatch } = useInstagram();
 
   // to handle change of input
   const [inputURL, setInputURL] = useState("");
   const handleChange = (event) => {
+    if (instagramState.downloadURL != "")
+      dispatch({ type: "SET", payload: "" });
     if (event.target.value != "") setInputURL(event.target.value);
   };
   //to submit url for downloading

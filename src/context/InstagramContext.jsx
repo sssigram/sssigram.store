@@ -14,10 +14,18 @@ const InstagramContextProvider = ({ children }) => {
         return produce(state, (draft) => {
           draft.loading = action.payload;
         });
+        break;
+
       case "SET":
         return produce(state, (draft) => {
           draft.downloadURL = action.payload;
         });
+        break;
+      case "ERROR":
+        return produce(state, (draft) => {
+          draft.error = action.payload;
+        });
+        break;
 
       default:
         return state;
@@ -27,6 +35,7 @@ const InstagramContextProvider = ({ children }) => {
     inputURL: "",
     downloadURL: "",
     loading: false,
+    error: "",
   });
 
   // async downloader function
@@ -39,7 +48,11 @@ const InstagramContextProvider = ({ children }) => {
     const data = { url: inputURL };
 
     await axios.post(serverURL, data, { headers }).then((res) => {
-      dispatch({ type: "SET", payload: JSON.parse(res.data).downloadURL });
+      if (JSON.parse(res.data).hasOwnProperty("downloadURL")) {
+        dispatch({ type: "SET", payload: JSON.parse(res.data).downloadURL });
+      } else if (JSON.parse(res.data).hasOwnProperty("error")) {
+        dispatch({ type: "ERROR", payload: JSON.parse(res.data).error });
+      }
       dispatch({ type: "LOADING", payload: false });
     });
     return;

@@ -1,6 +1,7 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const qs = require("qs");
+const { isStringObject } = require("util/types");
 
 const getInstagramVideo = async (req, res, next) => {
   const url = `https://v3.saveig.app/api/ajaxSearch`;
@@ -30,14 +31,20 @@ const getInstagramVideo = async (req, res, next) => {
   };
   let response = await axios.post(url, qs.stringify(data), { headers });
   let resData = response.data.data;
-  const $ = cheerio.load(resData);
-  const parentElement = $(".download-items");
-  const downloadURL = parentElement
-    .find(".download-items__btn")
-    .find("a")
-    .attr("href");
-  req.body = { downloadURL: downloadURL };
-  next();
+  if (typeof resData != "string") {
+    req.body = { error: "Please Enter A Valid URL" };
+    next();
+  } else {
+    const $ = cheerio.load(resData);
+    const parentElement = $(".download-items");
+    const downloadURL = parentElement
+      .find(".download-items__btn")
+      .find("a")
+      .attr("href");
+    req.body = { downloadURL: downloadURL };
+    next();
+  }
+  return;
 };
 
 exports.getInstagramVideo = getInstagramVideo;
