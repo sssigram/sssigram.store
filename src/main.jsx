@@ -16,6 +16,7 @@ import Story from "./pages/Story.jsx";
 import Photo from "./pages/Photo.jsx";
 import Reel from "./pages/Reel.jsx";
 import IGTV from "./pages/IGTV.jsx";
+import InstagramContextProvider from "./context/InstagramContext.jsx";
 
 const Index = () => {
   const router = createBrowserRouter(
@@ -55,6 +56,8 @@ const Index = () => {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Index />
+    <InstagramContextProvider>
+      <Index />
+    </InstagramContextProvider>
   </React.StrictMode>
 );

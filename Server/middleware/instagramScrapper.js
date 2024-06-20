@@ -36,7 +36,7 @@ const getInstagramVideo = async (req, res, next) => {
     .find(".download-items__btn")
     .find("a")
     .attr("href");
-  res.body = { downloadURL: downloadURL };
+  req.body = { downloadURL: downloadURL };
   next();
 };
 
