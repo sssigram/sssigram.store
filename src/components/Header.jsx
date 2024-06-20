@@ -10,7 +10,7 @@ import { FaRegPaste } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useInstagram } from "../context/InstagramContext";
 const Header = ({ heading, desc }) => {
-  const { dispatch, instagramState, getDownloadURL } = useInstagram();
+  const { getDownloadURL } = useInstagram();
 
   // to handle change of input
   const [inputURL, setInputURL] = useState("");
@@ -21,10 +21,8 @@ const Header = ({ heading, desc }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     getDownloadURL(inputURL);
-    // dispatch({ type: "POST", payload: inputURL });
     setInputURL("");
   };
-  console.log(instagramState);
   return (
     <header className='w-full flex flex-col justify-between items-center bg-gradient-to-bl from-red-600 via-pink-600 to-blue-600'>
       {/* Icons and titles start */}

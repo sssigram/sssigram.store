@@ -10,9 +10,13 @@ const InstagramContextProvider = ({ children }) => {
   // instagram Reducer
   const InstagramReducer = (state, action) => {
     switch (action.type) {
-      case "POST":
+      case "LOADING":
         return produce(state, (draft) => {
-          draft.inputURL = action.payload;
+          draft.loading = action.payload;
+        });
+      case "SET":
+        return produce(state, (draft) => {
+          draft.downloadURL = action.payload;
         });
 
       default:
@@ -22,19 +26,23 @@ const InstagramContextProvider = ({ children }) => {
   const [instagramState, dispatch] = useReducer(InstagramReducer, {
     inputURL: "",
     downloadURL: "",
+    loading: false,
   });
 
   // async downloader function
   const getDownloadURL = async (inputURL) => {
+    dispatch({ type: "LOADING", payload: true });
     const serverURL = "http://localhost:5050/instagram";
     const headers = {
       "Content-Type": "application/x-www-form-urlencoded",
     };
     const data = { url: inputURL };
 
-    await axios
-      .post(serverURL, data, { headers })
-      .then((res) => console.log(res.data));
+    await axios.post(serverURL, data, { headers }).then((res) => {
+      dispatch({ type: "SET", payload: JSON.parse(res.data).downloadURL });
+      dispatch({ type: "LOADING", payload: false });
+    });
+    return;
   };
   return (
     <InstagramContext.Provider
