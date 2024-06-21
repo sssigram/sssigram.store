@@ -37,11 +37,15 @@ const getInstagramVideo = async (req, res, next) => {
   } else {
     const $ = cheerio.load(resData);
     const parentElement = $(".download-items");
-    const downloadURL = parentElement
+    const video = parentElement
       .find(".download-items__btn")
       .find("a")
       .attr("href");
-    req.body = { downloadURL: downloadURL };
+    const thumb = parentElement
+      .find(".download-items__thumb")
+      .find("img")
+      .attr("src");
+    req.body = { video, thumb };
     next();
   }
   return;
