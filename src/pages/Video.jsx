@@ -19,6 +19,19 @@ const Video = () => {
   useEffect(() => {
     console.log(instagramState);
   }, [instagramState]);
+
+  const downloadFileByURL = () => {
+    fetch(instagramState.downloadURL).then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "YourFile.mp4";
+        alink.click();
+      });
+    });
+  };
   return (
     <div className='flex flex-col items-center justify-center'>
       <Header
@@ -47,16 +60,16 @@ const Video = () => {
               Here are the biggest enterprise technology acquisitions of 2021 so
               far, in reverse chronological order.
             </p> */}
-            <Link
-              // onMouseDown={() => dispatch({ type: "SET", payload: "" })}
-              to={instagramState.downloadURL}
+            <button
+              onMouseDown={downloadFileByURL}
+              // to={instagramState.downloadURL}
               className='inline-flex items-center w-full md:w-fit justify-center py-4 px-3 md:-ml-3 text-sm  text-white bg-gradient-to-br from-blue-700 to-blue-500 rounded-md  hover:bg-gradient-to-br hover:from-[#c73a3a] hover:from-10% hover:via-[#7554a7] hover:via-60% hover:to-[#3f73e4] hover:to-100% focus:ring-4 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               <FaDownload
                 size={24}
                 className='pr-1.5'
               />
               <span className='text-md md:text-xl'>Download</span>
-            </Link>
+            </button>
           </div>
         </div>
       ) : instagramState.error != "" && instagramState.downloadURL === "" ? (
