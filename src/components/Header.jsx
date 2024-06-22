@@ -25,6 +25,12 @@ const Header = ({ heading, desc }) => {
     getDownloadURL(inputURL);
     setInputURL("");
   };
+  // paste link from clickboard
+  const linkPaster = async (event) => {
+    event.preventDefault();
+    const text = await navigator.clipboard.readText();
+    setInputURL(text);
+  };
   return (
     <header className='w-full flex flex-col justify-between items-center bg-gradient-to-bl from-red-600 via-pink-600 to-blue-600'>
       {/* Icons and titles start */}
@@ -73,9 +79,7 @@ const Header = ({ heading, desc }) => {
 
       {/* search start */}
       <div className='w-full max-w-[672px] px-4 mb-4 md:mb-6'>
-        <form
-          onSubmit={handleSubmit}
-          className='flex flex-col gap-3 sm:gap-4 md:flex-row items-center justify-center mx-auto'>
+        <form className='flex flex-col gap-3 sm:gap-4 md:flex-row items-center justify-center mx-auto'>
           <div className='relative w-full flex bg-white rounded-md overflow-hidden'>
             <input
               type='text'
@@ -85,18 +89,33 @@ const Header = ({ heading, desc }) => {
               value={inputURL}
               onChange={handleChange}
             />
-            <button
-              type='submit'
-              className='inline-flex items-center justify-center py-4 px-3 text-sm  text-black bg-gray-100  border-r-1 border-gray-200 hover:bg-gray-50 focus:ring-2 focus:outline-none focus:ring-gray-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
-              <FaRegPaste
-                size={27}
-                className='pr-1.5'
-              />
-              <span className='text-md md:text-xl'>Paste</span>
-            </button>
+            {inputURL == "" ? (
+              <button
+                onMouseDown={linkPaster}
+                type='button'
+                className='inline-flex items-center justify-center py-4 px-3 text-sm  text-black bg-gray-100  border-r-1 border-gray-200 hover:bg-gray-50 focus:ring-2 focus:outline-none focus:ring-gray-300 dark:bg-blue-600 dark:hover:bg-bluonClicke-700 dark:focus:ring-blue-800 w-fit'>
+                <FaRegPaste
+                  size={27}
+                  className='pr-1.5'
+                />
+                <span className='text-md md:text-xl'>Paste</span>
+              </button>
+            ) : (
+              <button
+                onMouseDown={() => setInputURL("")}
+                type='button'
+                className='inline-flex items-center justify-center py-4 px-3 text-sm  text-black bg-gray-100  border-r-1 border-gray-200 hover:bg-gray-50 focus:ring-2 focus:outline-none focus:ring-gray-300 dark:bg-blue-600 dark:hover:bg-bluonClicke-700 dark:focus:ring-blue-800 w-fit'>
+                <FaRegPaste
+                  size={27}
+                  className='pr-1.5'
+                />
+                <span className='text-md md:text-xl'>Clear</span>
+              </button>
+            )}
           </div>
           <button
-            type='submit'
+            type='button'
+            onMouseDown={handleSubmit}
             className='inline-flex items-center w-full md:w-fit justify-center py-4 px-3 md:-ml-3 text-sm  text-white bg-gradient-to-br from-blue-700 to-blue-500 rounded-md  hover:bg-gradient-to-br hover:from-[#c73a3a] hover:from-10% hover:via-[#7554a7] hover:via-60% hover:to-[#3f73e4] hover:to-100% focus:ring-4 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
             <FaDownload
               size={24}
