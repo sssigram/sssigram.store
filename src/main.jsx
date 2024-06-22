@@ -20,6 +20,7 @@ import IGTV from "./pages/IGTV.jsx";
 import InstagramContextProvider, {
   useInstagram,
 } from "./context/InstagramContext.jsx";
+import FAQsPage from "./pages/FAQsPage.jsx";
 
 const Index = () => {
   const router = createBrowserRouter(
@@ -50,6 +51,10 @@ const Index = () => {
         <Route
           path='/igtv'
           element={<IGTV />}
+        />
+        <Route
+          path='/faqs'
+          element={<FAQsPage />}
         />
       </Route>
     )

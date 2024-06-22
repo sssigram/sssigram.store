@@ -33,17 +33,24 @@ const Navbar = () => {
           <ul className='font-medium flex rounded-lg space-x-8 rtl:space-x-reverse bg-white dark:bg-gray-900 dark:border-gray-700'>
             <li>
               <NavLink
-                to='#'
-                className='block bg-transparent text-blue-700 dark:text-blue-500'
-                aria-current='page'>
+                to='/'
+                className={({ isActive }) => {
+                  return `block ${
+                    isActive ? "text-blue-600" : "text-gray-900"
+                  } hover:bg-transparent hover:text-blue-700 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent`;
+                }}>
                 Home
               </NavLink>
             </li>
             <li>
               <NavLink
-                href='#'
-                className='block text-gray-900 hover:bg-transparent hover:text-blue-700 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent'>
-                About
+                to='/faqs'
+                className={({ isActive }) => {
+                  return `block ${
+                    isActive ? "text-blue-600" : "text-gray-900"
+                  } hover:bg-transparent hover:text-blue-700 dark:text-white dark:hover:text-blue-500 dark:hover:bg-transparent`;
+                }}>
+                FAQs
               </NavLink>
             </li>
           </ul>
