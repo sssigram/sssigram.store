@@ -18,12 +18,23 @@ const InstagramContextProvider = ({ children }) => {
 
       case "SET":
         return produce(state, (draft) => {
-          draft.downloadURL = action.payload;
+          draft.downloadObj = action.payload;
         });
         break;
       case "ERROR":
         return produce(state, (draft) => {
           draft.error = action.payload;
+        });
+        break;
+      case "RESET":
+        return produce(state, (draft) => {
+          draft.inputURL = "";
+          draft.downloadObj = {
+            video: "",
+            thumb: "",
+          };
+          draft.loading = false;
+          draft.error = "";
         });
         break;
 
@@ -33,7 +44,10 @@ const InstagramContextProvider = ({ children }) => {
   };
   const [instagramState, dispatch] = useReducer(InstagramReducer, {
     inputURL: "",
-    downloadURL: "",
+    downloadObj: {
+      video: "",
+      thumb: "",
+    },
     loading: false,
     error: "",
   });
@@ -48,8 +62,8 @@ const InstagramContextProvider = ({ children }) => {
     const data = { url: inputURL };
 
     await axios.post(serverURL, data, { headers }).then((res) => {
-      if (JSON.parse(res.data).hasOwnProperty("downloadURL")) {
-        dispatch({ type: "SET", payload: JSON.parse(res.data).downloadURL });
+      if (JSON.parse(res.data).hasOwnProperty("video")) {
+        dispatch({ type: "SET", payload: JSON.parse(res.data) });
       } else if (JSON.parse(res.data).hasOwnProperty("error")) {
         dispatch({ type: "ERROR", payload: JSON.parse(res.data).error });
       }
@@ -57,9 +71,30 @@ const InstagramContextProvider = ({ children }) => {
     });
     return;
   };
+
+  //reset instagramState
+  const resetState = () => {
+    dispatch({ type: "RESET" });
+  };
+
+  //hhandle rest
+  const handleReset = () => {
+    resetState();
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <InstagramContext.Provider
-      value={{ dispatch, instagramState, getDownloadURL }}>
+      value={{
+        dispatch,
+        instagramState,
+        getDownloadURL,
+        resetState,
+        handleReset,
+      }}>
       {children}
     </InstagramContext.Provider>
   );

@@ -15,9 +15,9 @@ const Header = ({ heading, desc }) => {
   // to handle change of input
   const [inputURL, setInputURL] = useState("");
   const handleChange = (event) => {
-    if (instagramState.downloadURL != "")
+    if (instagramState.downloadObj.video != "")
       dispatch({ type: "SET", payload: "" });
-    if (event.target.value != "") setInputURL(event.target.value);
+    setInputURL(event.target.value);
   };
   //to submit url for downloading
   const handleSubmit = (event) => {

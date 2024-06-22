@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 //react rounter dom imports
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useInstagram } from "../context/InstagramContext";
 
 const Navbar = () => {
+  // to reset state to its original state
+  const { resetState, instagramState } = useInstagram();
+
+  // to reset instagram state on route changing
+  const location = useLocation();
+  useEffect(() => {
+    resetState();
+  }, [location]);
   return (
     // navbar Starts here
     <nav className='bg-white border-gray-200 dark:bg-gray-900'>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 //
@@ -7,6 +7,7 @@ import {
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
+  useNavigate,
 } from "react-router-dom";
 //components
 import Layout from "./Layout.jsx";
@@ -16,7 +17,9 @@ import Story from "./pages/Story.jsx";
 import Photo from "./pages/Photo.jsx";
 import Reel from "./pages/Reel.jsx";
 import IGTV from "./pages/IGTV.jsx";
-import InstagramContextProvider from "./context/InstagramContext.jsx";
+import InstagramContextProvider, {
+  useInstagram,
+} from "./context/InstagramContext.jsx";
 
 const Index = () => {
   const router = createBrowserRouter(

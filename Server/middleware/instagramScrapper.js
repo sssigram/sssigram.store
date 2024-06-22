@@ -29,23 +29,28 @@ const getInstagramVideo = async (req, res, next) => {
     "User-Agent":
       "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
   };
-  let response = await axios.post(url, qs.stringify(data), { headers });
-  let resData = response.data.data;
-  if (typeof resData != "string") {
-    req.body = { error: "Please Enter A Valid URL" };
-    next();
-  } else {
-    const $ = cheerio.load(resData);
-    const parentElement = $(".download-items");
-    const video = parentElement
-      .find(".download-items__btn")
-      .find("a")
-      .attr("href");
-    const thumb = parentElement
-      .find(".download-items__thumb")
-      .find("img")
-      .attr("src");
-    req.body = { video, thumb };
+  try {
+    let response = await axios.post(url, qs.stringify(data), { headers });
+    let resData = response.data.data;
+    if (typeof resData != "string") {
+      req.body = { error: "Please Enter A Valid URL" };
+      next();
+    } else {
+      const $ = cheerio.load(resData);
+      const parentElement = $(".download-items");
+      const video = parentElement
+        .find(".download-items__btn")
+        .find("a")
+        .attr("href");
+      const thumb = parentElement
+        .find(".download-items__thumb")
+        .find("img")
+        .attr("src");
+      req.body = { video, thumb };
+      next();
+    }
+  } catch (error) {
+    req.body = { error: "Some Error! Please Try Again" };
     next();
   }
   return;
