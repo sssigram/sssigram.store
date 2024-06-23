@@ -34,34 +34,34 @@ const Header = ({ heading, desc }) => {
   return (
     <header className='w-full flex flex-col justify-between items-center bg-gradient-to-bl from-red-600 via-pink-600 to-blue-600'>
       {/* Icons and titles start */}
-      <div className=' bg-white/25 w-full overflow-hidden flex items-center justify-center'>
+      <div className=' bg-white/25 w-full overflow-hidden flex items-center justify-center mx-auto'>
         <Link
           to={"/video"}
-          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+          className='flex gap-2 px-4 sm:px-10 md:px-6 py-2.5 items-center justify-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <MdOutlineVideoLibrary size={24} />
           <p className='hidden md:block text-md'>Video</p>
         </Link>
         <Link
           to='/reel'
-          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+          className='flex gap-2 px-4 sm:px-10 md:px-6 py-2.5 items-center justify-center  text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <PiFilmReelBold size={24} />
           <p className='hidden md:block text-md'>Reel</p>
         </Link>
         <Link
           to='/photo'
-          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+          className='flex gap-2 px-4 sm:px-10 md:px-6 py-2.5 items-center justify-center  text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <TbPhoto size={24} />
           <p className='hidden md:block text-md'>Photo</p>
         </Link>
         <Link
           to='/story'
-          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
+          className='flex gap-2 px-4 sm:px-10 md:px-6 py-2.5 items-center justify-center  text-white border-r border-white/25 cursor-pointer hover:text-white/70 ease-in duration-300'>
           <LuHistory size={24} />
           <p className='hidden md:block text-md'>Story</p>
         </Link>
         <Link
           to='/igtv'
-          className='flex gap-2 px-6 sm:px-10 md:px-6 py-2.5 items-center text-white cursor-pointer hover:text-white/70 ease-in duration-300'>
+          className='flex gap-2 px-4 sm:px-10 md:px-6 py-2.5 items-center justify-center  text-white cursor-pointer hover:text-white/70 ease-in duration-300'>
           <PiTelevisionSimpleBold size={24} />
           <p className='hidden md:block text-md'>IGTV</p>
         </Link>
@@ -69,11 +69,11 @@ const Header = ({ heading, desc }) => {
       {/* Icons and titles end */}
 
       {/* heading and tagline start*/}
-      <div className='flex flex-col gap-1.5 items-center my-6 text-white mt-8'>
-        <h2 className='text-2xl sm:text-3xl md:text-4xl font-bold'>
+      <div className='flex flex-col gap-1.5 items-center justify-center my-6 text-white mt-8'>
+        <h2 className='text-2xl sm:text-3xl md:text-4xl text-center font-bold'>
           {heading}
         </h2>
-        <p className='text-md sm:text-lg'>{desc}</p>
+        <p className='text-md sm:text-lg text-center'>{desc}</p>
       </div>
       {/* heading and tagline end*/}
 

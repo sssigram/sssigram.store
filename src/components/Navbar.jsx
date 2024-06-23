@@ -21,7 +21,7 @@ const Navbar = () => {
         <Link
           to='/'
           className='flex items-center space-x-3 rtl:space-x-reverse'>
-          <span className='self-center text-3xl font-semibold bg-gradient-to-r from-yellow-400 from-10% to-pink-600 to-30% inline-block text-transparent bg-clip-text whitespace-nowrap dark:text-white'>
+          <span className='self-center text-2xl md:text-3xl font-semibold bg-gradient-to-r from-yellow-400 from-10% to-pink-600 to-30% inline-block text-transparent bg-clip-text whitespace-nowrap dark:text-white'>
             You Logo
           </span>
         </Link>
