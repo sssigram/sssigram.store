@@ -98,7 +98,7 @@ const Story = () => {
         <BodyContainer>
           <div className='flex flex-col gap-1.5 items-center my-6'>
             <Heading>Instagram Story Saver</Heading>
-            <p className='text-lg'>
+            <p className='text-lg text-center'>
               Story Saver created by igram.world, is a convenient application
               that enables you to download any Instagram story to your device
               with complete anonymity. This Insta story saver is an ideal

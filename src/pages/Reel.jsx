@@ -99,7 +99,7 @@ const Reel = () => {
             <h3 className='text-4xl font-bold mb-4 text-violet-700'>
               Instagram Reels Downloader
             </h3>
-            <p className='text-lg'>
+            <p className='text-lg text-center'>
               Reels Downloader created by igram.world is a convenient
               application that enables you to download any Instagram Reels video
               to your device with complete anonymity. This Insta Reels

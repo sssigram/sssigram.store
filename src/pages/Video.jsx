@@ -97,7 +97,7 @@ const Video = () => {
         <BodyContainer>
           <div className='flex flex-col gap-1.5 items-center my-6'>
             <Heading>Download Instagram Videos</Heading>
-            <p className='text-lg'>
+            <p className='text-lg text-center'>
               Downloading Instagram videos with the IGTV video downloader is
               easy, fast, and time-saving. When browsing through Instagram or
               coming across a post with an IGTV video you want to download,
