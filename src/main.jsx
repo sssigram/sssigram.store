@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "./i18n.js";
+
 //
 import {
   Route,
@@ -65,7 +67,9 @@ const Index = () => {
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <InstagramContextProvider>
-      <Index />
+      <Suspense fallback='loading'>
+        <Index />
+      </Suspense>
     </InstagramContextProvider>
   </React.StrictMode>
 );
