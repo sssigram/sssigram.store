@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import AdMobileLarge from "./prime-components/ads/AdMobileLarge";
+import AdwebLarge from "./prime-components/ads/AdwebLarge";
 
 const HowToDownload = ({ data }) => {
   const mediaMatch = window.matchMedia("(min-width: 768px)");
@@ -38,6 +40,7 @@ const HowToDownload = ({ data }) => {
   };
   return (
     <div className='flex flex-col items-center'>
+      <AdwebLarge />
       {data && data.length
         ? data.map((dataItem, index) => (
             <HowToDownloadCard
@@ -131,6 +134,7 @@ const HowToDownload = ({ data }) => {
           </div>
         </div>
       </div> */}
+      <AdMobileLarge />
     </div>
   );
 };

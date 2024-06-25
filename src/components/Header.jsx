@@ -9,6 +9,7 @@ import { FaDownload } from "react-icons/fa6";
 import { FaRegPaste } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useInstagram } from "../context/InstagramContext";
+import AdwebLarge from "./prime-components/ads/AdwebLarge";
 const Header = ({ heading, desc }) => {
   const { getDownloadURL, instagramState, dispatch } = useInstagram();
 
@@ -126,6 +127,7 @@ const Header = ({ heading, desc }) => {
         </form>
       </div>
       {/* search end */}
+      <AdwebLarge />
     </header>
   );
 };
