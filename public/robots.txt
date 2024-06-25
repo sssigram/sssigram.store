@@ -1,1 +1,4 @@
-robots file
+User-agent: *
+Disallow: /
+
+ Sitemap: https://social-media-downloader-iota.vercel.app/sitemap.xml

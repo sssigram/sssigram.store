@@ -2,10 +2,8 @@ import React, { useState } from "react";
 //react icons
 import { IoIosArrowDown } from "react-icons/io";
 import Heading from "./prime-components/Heading";
-import { useTranslation } from "react-i18next";
 
 const FAQs = ({ data }) => {
-  const { t } = useTranslation();
   //selected FAQs item
   const [selected, setSelected] = useState("");
   //to close and open faqs
@@ -17,7 +15,7 @@ const FAQs = ({ data }) => {
 
   return (
     <div>
-      <Heading>{t("faq_home_heading")}</Heading>
+      <Heading>Frequently Asked Questions</Heading>
       <p className='mb-5 text-center'>
         This FAQ provides information on frequent questions or concerns about
         the igram . world downloader . if you can't find the answer to your

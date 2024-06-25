@@ -16,18 +16,14 @@ import { FaDownload } from "react-icons/fa6";
 import { LuRefreshCcw } from "react-icons/lu";
 import { PropagateLoader } from "react-spinners";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 
 const App = () => {
   const { instagramState, handleReset } = useInstagram();
-  const { t } = useTranslation();
-  console.log(useTranslation());
-
   return (
     <div className='flex flex-col items-center justify-center'>
       <Header
-        heading={t("header_home_heading")}
-        desc={t("header_home_heading")}
+        heading='Download anything from Instagram'
+        desc='Video, Pictures, Reels, Stories etc.'
       />
       {instagramState.loading ? (
         <BodyContainer>
