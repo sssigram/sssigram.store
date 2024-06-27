@@ -55,8 +55,7 @@ const InstagramContextProvider = ({ children }) => {
   // async downloader function
   const getDownloadURL = async (inputURL) => {
     dispatch({ type: "LOADING", payload: true });
-    const serverURL =
-      "https://social-media-downloader-server.vercel.app/instagram";
+    const serverURL = "/instagram";
     const headers = {
       "Content-Type": "application/x-www-form-urlencoded",
     };

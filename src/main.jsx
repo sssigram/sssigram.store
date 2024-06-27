@@ -19,6 +19,7 @@ import Reel from "./pages/Reel.jsx";
 import IGTV from "./pages/IGTV.jsx";
 import InstagramContextProvider from "./context/InstagramContext.jsx";
 import FAQsPage from "./pages/FAQsPage.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 
 const Index = () => {
   const router = createBrowserRouter(
@@ -53,6 +54,10 @@ const Index = () => {
         <Route
           path='/faqs'
           element={<FAQsPage />}
+        />
+        <Route
+          path='/privacy-policy'
+          element={<PrivacyPolicy />}
         />
       </Route>
     )

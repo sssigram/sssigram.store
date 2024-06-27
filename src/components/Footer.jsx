@@ -25,7 +25,7 @@ const Footer = () => {
             </li>
             <li>
               <NavLink
-                href='#'
+                to={"/privacy-policy"}
                 className='hover:underline me-4 md:me-6'>
                 Privacy Policy
               </NavLink>
