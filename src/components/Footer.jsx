@@ -18,7 +18,7 @@ const Footer = () => {
           <ul className='flex flex-wrap items-center mb-6 text-md text-gray-500 sm:mb-0 dark:text-gray-400'>
             <li>
               <NavLink
-                href='#'
+                to={"/about"}
                 className='hover:underline me-4 md:me-6'>
                 About
               </NavLink>
