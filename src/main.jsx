@@ -21,6 +21,7 @@ import InstagramContextProvider from "./context/InstagramContext.jsx";
 import FAQsPage from "./pages/FAQsPage.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
 import About from "./pages/About.jsx";
+import ContactUs from "./pages/ContactUS.jsx";
 
 const Index = () => {
   const router = createBrowserRouter(
@@ -63,6 +64,10 @@ const Index = () => {
         <Route
           path='/about'
           element={<About />}
+        />
+        <Route
+          path='/contact-us'
+          element={<ContactUs />}
         />
       </Route>
     )

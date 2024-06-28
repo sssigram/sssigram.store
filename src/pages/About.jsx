@@ -1,6 +1,5 @@
 import React from "react";
 import Heading from "../components/prime-components/Heading";
-import Heading2 from "../components/prime-components/Heading2";
 import { about } from "../data/about";
 import AboutDataSection from "../components/prime-components/AboutDataSection";
 

@@ -32,16 +32,9 @@ const Footer = () => {
             </li>
             <li>
               <NavLink
-                href='#'
-                className='hover:underline me-4 md:me-6'>
-                Licensing
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                href='#'
+                to={"/contact-us"}
                 className='hover:underline'>
-                Contact
+                Contact US
               </NavLink>
             </li>
           </ul>
