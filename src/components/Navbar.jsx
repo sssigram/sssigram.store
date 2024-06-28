@@ -16,7 +16,7 @@ const Navbar = () => {
     // navbar Starts here
     <nav className='bg-white border-gray-200 dark:bg-gray-900'>
       {/* main div of navbar start */}
-      <div className='max-w-screen-xl flex flex-wrap items-center justify-between lg:justify-around mx-auto py-3 px-5 md:py-5 '>
+      <div className='max-w-screen-xl flex flex-wrap items-center justify-between  mx-auto py-3 px-5 lg:px-20 md:py-5 '>
         {/* Main logo start */}
         <Link
           to='/'
