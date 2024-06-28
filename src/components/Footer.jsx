@@ -11,7 +11,7 @@ const Footer = () => {
             to='/'
             className='flex items-center space-x-3 rtl:space-x-reverse'>
             <span className='self-center text-2xl md:text-3xl font-semibold bg-gradient-to-r from-yellow-400 from-10% to-pink-600 to-30% inline-block text-transparent bg-clip-text whitespace-nowrap dark:text-white  my-4'>
-              You Logo
+              StoriesIG
             </span>
           </Link>
           {/* main logo end */}
@@ -44,7 +44,7 @@ const Footer = () => {
           <Link
             to={"#"}
             className='hover:underline'>
-            YourDomain.com
+            storiesig.xyz
           </Link>
           &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
           ducimus quod odio, cumque debitis quas minima voluptates perferendis
@@ -56,7 +56,7 @@ const Footer = () => {
           <Link
             to={"#"}
             className='hover:underline'>
-            YourDomain
+            storiesig.xyz
           </Link>
           . All Rights Reserved.
         </span>

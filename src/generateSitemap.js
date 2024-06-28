@@ -19,7 +19,7 @@ const links = [
 
 async function generateSitemap() {
   const sitemap = new SitemapStream({
-    hostname: "https://social-media-downloader-iota.vercel.app/",
+    hostname: "https://storiesig.xyz/",
   });
   const writeStream = createWriteStream(resolve("public", "./sitemap.xml"));
 

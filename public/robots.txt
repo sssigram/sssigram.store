@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
 
- Sitemap: https://social-media-downloader-iota.vercel.app/sitemap.xml
+ Sitemap: https://storiesig.xyz/sitemap.xml
