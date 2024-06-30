@@ -3,7 +3,7 @@ import Heading from "../components/prime-components/Heading";
 import { contactData } from "../data/contact";
 import AboutDataSection from "../components/prime-components/AboutDataSection";
 import Heading2 from "../components/prime-components/Heading2";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const ContactUs = () => {
   const ContactDetails = ({ data }) => {
@@ -16,7 +16,7 @@ const ContactUs = () => {
     );
   };
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>Contact Page</title>
         <meta
@@ -49,7 +49,7 @@ const ContactUs = () => {
         />
       ))} */}
       </div>
-    </>
+    </HelmetProvider>
   );
 };
 

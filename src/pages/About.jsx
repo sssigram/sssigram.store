@@ -2,11 +2,11 @@ import React from "react";
 import Heading from "../components/prime-components/Heading";
 import { about } from "../data/about";
 import AboutDataSection from "../components/prime-components/AboutDataSection";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const PrivacyPolicy = () => {
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>About Page</title>
         <meta
@@ -27,7 +27,7 @@ const PrivacyPolicy = () => {
           />
         ))}
       </div>
-    </>
+    </HelmetProvider>
   );
 };
 

@@ -16,13 +16,13 @@ import { FaDownload } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { LuRefreshCcw } from "react-icons/lu";
 //helmet imports
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Video = () => {
   const { instagramState, handleReset } = useInstagram();
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>Video Page</title>
         <meta
@@ -145,7 +145,7 @@ const Video = () => {
         )}
         {/* heading and paragram */}
       </div>
-    </>
+    </HelmetProvider>
   );
 };
 

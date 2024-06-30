@@ -15,12 +15,12 @@ import { FaDownload } from "react-icons/fa6";
 import { LuRefreshCcw } from "react-icons/lu";
 import { PropagateLoader } from "react-spinners";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 const Reel = () => {
   const { instagramState, handleReset } = useInstagram();
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>reel Page</title>
         <meta
@@ -147,7 +147,7 @@ const Reel = () => {
           </BodyContainer>
         )}
       </div>
-    </>
+    </HelmetProvider>
   );
 };
 

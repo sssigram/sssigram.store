@@ -4,7 +4,7 @@ import { faqData } from "../data/faqData";
 import BodyContainer from "../components/BodyContainer";
 import AdVertical from "../components/prime-components/ads/AdVertical";
 import AdMobileLarge from "../components/prime-components/ads/AdMobileLarge";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const FAQsPage = () => {
   return (

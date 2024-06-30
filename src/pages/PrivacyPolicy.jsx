@@ -3,11 +3,11 @@ import Heading from "../components/prime-components/Heading";
 import Heading2 from "../components/prime-components/Heading2";
 import { PrivacyPolicyData } from "../data/PrivacyPolicy";
 import PrivacyPolicyDataSection from "../components/prime-components/PrivacyPolicyDataSection";
-import { Helmet } from "react-helmet";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const PrivacyPolicy = () => {
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>Privacy Policy Page</title>
         <meta
@@ -32,7 +32,7 @@ const PrivacyPolicy = () => {
           />
         ))}
       </div>
-    </>
+    </HelmetProvider>
   );
 };
 
