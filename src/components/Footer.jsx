@@ -42,7 +42,7 @@ const Footer = () => {
         <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
         <span className='block text-sm text-black  dark:text-gray-400 mb-3'>
           <Link
-            to={"#"}
+            to={"/"}
             className='hover:underline'>
             storiesig.xyz
           </Link>
@@ -52,7 +52,7 @@ const Footer = () => {
           commodi.
         </span>
         <span className='block text-md text-gray-400 sm:text-center dark:text-gray-400'>
-          © 2023{" "}
+          © 2024{" "}
           <Link
             to={"#"}
             className='hover:underline'>

@@ -9,7 +9,7 @@ export const faqData = [
     id: 2,
     question: "How does an Instagram downloader work?",
     answer:
-      "An Instagram downloader works by taking the URL of the Instagram post you want to download and converting it into a downloadable format. It’s a quick and easy way to save your favorite content.",
+      "An Instagram downloader works by taking the URL of the Instagram post you want to download and converting it into a downloadable forfaqVideoDatamat. It’s a quick and easy way to save your favorite content.",
   },
   {
     id: 3,
@@ -65,9 +65,8 @@ export const faqData = [
 export const faqVideoData = [
   {
     id: 1,
-    question: "What is an Instagram video downloader?",
-    answer:
-      "It's an online tool that allows you to download Instagram photos, videos, and IGTV videos. In case you need to use it later. SnapInta is the best tool for downloading from Instagram.",
+    question: "question?",
+    answer: "answer",
   },
   {
     id: 2,
@@ -90,6 +89,12 @@ export const faqVideoData = [
   {
     id: 5,
     question: "Is there a limit to how many videos I can download?",
+    answer:
+      "No, SnapInta allows you to download an unlimited number of Instagram videos and photos without any restrictions, so you can save as much content as you want.",
+  },
+  {
+    id: 6,
+    question: "q6?",
     answer:
       "No, SnapInta allows you to download an unlimited number of Instagram videos and photos without any restrictions, so you can save as much content as you want.",
   },

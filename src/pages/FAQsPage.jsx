@@ -8,7 +8,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const FAQsPage = () => {
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
         <title>FAQ Page</title>
         <meta
@@ -21,20 +21,14 @@ const FAQsPage = () => {
         />
       </Helmet>
       <div className='flex flex-col lg:flex-row justify-center items-center'>
-        <div className='hidden lg:block min-w-fit'>
-          <AdVertical />
-        </div>
-        <div className='lg:hidden min-w-fit'>
-          <AdMobileLarge />
-        </div>
+        <div className='hidden lg:block min-w-fit'>{/* <AdVertical /> */}</div>
+        <div className='lg:hidden min-w-fit'>{/* <AdMobileLarge /> */}</div>
         <BodyContainer>
           <FAQs data={faqData} />
         </BodyContainer>
-        <div className='hidden lg:block min-w-fit'>
-          <AdVertical />
-        </div>
+        <div className='hidden lg:block min-w-fit'>{/* <AdVertical /> */}</div>
       </div>
-    </>
+    </HelmetProvider>
   );
 };
 

@@ -24,7 +24,7 @@ const Video = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Video Page</title>
+        <title>Video</title>
         <meta
           name='description'
           content='Welcome to the Home Page'
@@ -36,7 +36,7 @@ const Video = () => {
       </Helmet>
       <div className='flex flex-col items-center justify-center'>
         <Header
-          heading='Instagram Video Downloader'
+          heading='Video Downloader'
           desc='Download Videos from Instagram'
         />
         {instagramState.loading ? (

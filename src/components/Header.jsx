@@ -142,7 +142,7 @@ const Header = ({ heading, desc }) => {
           </form>
         </div>
         {/* search end */}
-        <AdwebLarge />
+        {/* <AdwebLarge /> */}
       </header>
     </>
   );

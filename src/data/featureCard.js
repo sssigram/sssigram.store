@@ -35,6 +35,12 @@ export const allFeatureCardData = [
     title: "Carousel Downloader",
     description: `Instagram's Carousel posts, also referred to as Album or Gallery posts, allow users to share multiple photos, videos, or a combination of both. If you want to download multiple photos from an Instagram gallery, your_domain is an excellent tool to use. Our platform provides the best solution for downloading Instagram galleries.`,
   },
+  {
+    id: 7,
+    image: "https://igram.world/img/features/carousel.png",
+    title: "Carousel Downloader",
+    description: `Instagram's Carousel posts, also referred to as Album or Gallery posts, allow users to share multiple photos, videos, or a combination of both. If you want to download multiple photos from an Instagram gallery, your_domain is an excellent tool to use. Our platform provides the best solution for downloading Instagram galleries.`,
+  },
 ];
 
 export const videoFeatureCardData = [

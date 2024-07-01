@@ -6,12 +6,8 @@ import AdMobileLarge from "./prime-components/ads/AdMobileLarge";
 const FeatureSection = () => {
   return (
     <div className='flex flex-col lg:flex-row justify-center items-center'>
-      <div className='hidden lg:block min-w-fit'>
-        <AdVertical />
-      </div>
-      <div className='lg:hidden'>
-        <AdMobileLarge />
-      </div>
+      <div className='hidden lg:block min-w-fit'>{/* <AdVertical /> */}</div>
+      <div className='lg:hidden'>{/* <AdMobileLarge /> */}</div>
       <div className='w-full p-4 bg-gradient-to-br from-[#2c1b1b] via-[#3f344c] to-[#182644] rounded-xl shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-200'>
         <div className='w-full text-center md:text-start'>
           <h5 className='mb-8 text-xl md:text-3xl font-bold text-gray-300 dark:text-white text-center'>
@@ -83,9 +79,7 @@ const FeatureSection = () => {
           </div>
         </div>
       </div>
-      <div className='hidden lg:block min-w-fit'>
-        <AdVertical />
-      </div>
+      <div className='hidden lg:block min-w-fit'>{/* <AdVertical /> */}</div>
     </div>
   );
 };

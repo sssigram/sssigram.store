@@ -14,6 +14,7 @@ const links = [
   { url: "/photo", changefreq: "monthly", priority: 0.7 },
   { url: "/igtv", changefreq: "monthly", priority: 0.7 },
   { url: "/faq", changefreq: "monthly", priority: 0.7 },
+  { url: "/about", changefreq: "monthly", priority: 0.7 },
   // Add other routes here
 ];
 

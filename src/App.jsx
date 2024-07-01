@@ -23,7 +23,7 @@ const App = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Home Page</title>
+        <title>Stories IG</title>
         <meta
           name='description'
           content='Welcome to the Home Page'
@@ -35,7 +35,7 @@ const App = () => {
       </Helmet>
       <div className='flex flex-col items-center justify-center'>
         <Header
-          heading='Download anything from Instagram'
+          heading='Download Content from Instagram'
           desc='Video, Pictures, Reels, Stories etc.'
         />
         {instagramState.loading ? (
