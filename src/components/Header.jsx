@@ -17,7 +17,7 @@ const Header = ({ heading, desc }) => {
   // to handle change of input
   const [inputURL, setInputURL] = useState("");
   const handleChange = (event) => {
-    if (instagramState.downloadObj.url[0].url != "")
+    if (instagramState.downloadObj.url[0]?.url != "")
       dispatch({
         type: "SET",
         payload: {
@@ -67,7 +67,6 @@ const Header = ({ heading, desc }) => {
     const text = await navigator.clipboard.readText();
     setInputURL(text);
   };
-  console.log(instagramState.downloadObj.url[0]);
   return (
     <>
       <Popup

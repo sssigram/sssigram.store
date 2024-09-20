@@ -115,8 +115,8 @@ const IGTV = () => {
                 easy, fast, and time-saving. When browsing through Instagram or
                 coming across a post with an IGTV video you want to download,
                 simply copy the URL of that IGTV video and paste it into the
-                designated field on the iGram page. Finally, click the Download
-                button. That's it!
+                designated field on the SSSiGram page. Finally, click the
+                Download button. That's it!
               </p>
             </div>
 
@@ -133,7 +133,7 @@ const IGTV = () => {
             <DownloadApp />
 
             {/* featureCard section start */}
-            <Heading>Your_Domain IGTV Downloader</Heading>
+            <Heading>SSSiGram IGTV Downloader</Heading>
             <FeatureCard data={igtvFeatureCardData} />
             {/* featureCard section end */}
 

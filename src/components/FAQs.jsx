@@ -18,7 +18,7 @@ const FAQs = ({ data }) => {
       <Heading>Frequently Asked Questions</Heading>
       <p className='mb-5 text-center'>
         This FAQ provides information on frequent questions or concerns about
-        the igram . world downloader . if you can't find the answer to your
+        the sssigram.store downloader . if you can't find the answer to your
         question, feel free to ask through email on our contact page
       </p>
       {data && data.length

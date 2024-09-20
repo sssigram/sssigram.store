@@ -113,7 +113,7 @@ const Reel = () => {
                 Instagram Reels Downloader
               </h3>
               <p className='text-lg text-center'>
-                Reels Downloader created by igram.world is a convenient
+                Reels Downloader created by SSSiGram.store is a convenient
                 application that enables you to download any Instagram Reels
                 video to your device with complete anonymity. This Insta Reels
                 downloader is an ideal solution for individuals who want to save

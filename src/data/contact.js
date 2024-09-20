@@ -1,12 +1,12 @@
 export const contactData = {
-  title: "Contact Us - Storiesig.xyz",
+  title: "Contact Us - sssigram.store",
   sections: [
     {
       name: "Contact Information",
       text: {
-        desc: "Thank you for your interest in Storiesig.xyz! Whether you have a question about our Instagram downloader service or need assistance, we're here to help.",
+        desc: "Thank you for your interest in sssigram.store! Whether you have inquiries about our Instagram downloader service or require assistance, we're here to provide support.",
         contactDetails: [
-          { type: "Email", value: "info@storiesig.xyz" },
+          { type: "Email", value: "xxxxx" },
           { type: "Phone", value: "xxxxxxxxx" },
         ],
       },
@@ -14,7 +14,7 @@ export const contactData = {
     {
       name: "Customer Support",
       text: {
-        desc: "Our dedicated support team is available to assist you with any inquiries or issues you may have regarding our Instagram downloader. Feel free to reach out to us via email or phone, or use the contact form below.",
+        desc: "Our dedicated support team is here to address any questions or concerns you might have about our Instagram downloader. Don't hesitate to contact us via email, phone, or through the contact form below.",
       },
     },
   ],

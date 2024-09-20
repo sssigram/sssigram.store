@@ -1,41 +1,41 @@
 export const howToDownloadData = [
   {
     id: "howToDownload_1",
-    image: "https://igram.world/img/how-to/copy-url.png",
+    image: "images/how-to-download-1.jpeg",
     title: "Copy the URL",
-    description: `To get started, access either the Instagram app or website and retrieve the link to the specific video, reels, carousel, or IGTV content that you want to copy.`,
+    description: `Start by accessing the Instagram app or website and locating the link to the particular video, reel, carousel, or IGTV content you intend to download. Copy this link to continue.`,
   },
   {
     id: "howToDownload_2",
-    image: "https://igram.world/img/how-to/paste-url.png",
+    image: "images/how-to-download-2.png",
     title: "Paste the link",
-    description: `Return to the your_domain website, paste the link into the input field at the top of the screen and click the “Download” button.`,
+    description: `Return to SSSiGram's website, paste the copied link into the input field at the top of the page, and then click on the "Download" button.`,
   },
   {
     id: "howToDownload_3",
-    image: "https://igram.world/img/how-to/click-download.png",
+    image: "images/how-to-download-3.jpeg",
     title: "Download",
-    description: `In no time at all, you'll receive a list of results that offer various quality options. Choose the option that best suits your requirements and download it.`,
+    description: `Soon after, you'll be presented with a list of results showing various quality options. Choose the one that best fits your requirements and start the download process.`,
   },
 ];
 
 export const howToDownloadStory = [
   {
     id: "howToDownload_1",
-    image: "https://igram.world/img/how-to/copy-story.png",
+    image: "images/how-to-download-1.jpeg",
     title: "Copy the URL",
-    description: `First, open the Instagram Story you wish to download. Then, click on the (⋯) icon if you are using an iPhone or (⋮) if you are using an Android. From the popup menu, select the "Copy Link" option to copy the Story's URL.`,
+    description: `Begin by accessing the Instagram Story you want to download. Next, tap the (⋯) icon on an iPhone or (⋮) on an Android device. Choose "Copy Link" from the menu that appears to copy the URL of the Story.`,
   },
   {
     id: "howToDownload_2",
-    image: "https://igram.world/img/how-to/paste-url.png",
+    image: "images/how-to-download-2.png",
     title: "Paste the link",
-    description: `Return to the your_domain website, paste the link into the input field at the top of the screen and click the “Download” button.`,
+    description: `Go back to SSSiGram website, paste the link into the input field located at the top of the screen, and then click on the "Download" button.`,
   },
   {
     id: "howToDownload_3",
-    image: "https://igram.world/img/how-to/click-download.png",
+    image: "images/how-to-download-3.jpeg",
     title: "Download the Story",
-    description: `After clicking the "Download" button, the Story will be downloaded to your device . Depending on your device, the Story file will either be saved in the Downloads folder or downloads gallery.`,
+    description: `Once you click the "Download" button, the Story will be saved to your device. Depending on your device, the Story file will be stored in either the Downloads folder or the downloads gallery.`,
   },
 ];

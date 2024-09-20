@@ -112,10 +112,10 @@ const Story = () => {
             <div className='flex flex-col gap-1.5 items-center my-6'>
               <Heading>Instagram Story Saver</Heading>
               <p className='text-lg text-center'>
-                Story Saver created by igram.world, is a convenient application
-                that enables you to download any Instagram story to your device
-                with complete anonymity. This Insta story saver is an ideal
-                solution for individuals who want to save stories from
+                Story Saver created by SSSiGram.store, is a convenient
+                application that enables you to download any Instagram story to
+                your device with complete anonymity. This Insta story saver is
+                an ideal solution for individuals who want to save stories from
                 Instagram. Whether you wish to repost, re-upload or simply save
                 them for future viewing with your friends, this app allows you
                 to add stories to your own media library without any

@@ -23,20 +23,23 @@ const App = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Stories IG</title>
+        <title>
+          SSSiGram - Instagram Downloader - Save Instagram Videos, Photos and
+          Reels Free
+        </title>
         <meta
           name='description'
-          content='Welcome to the Home Page'
+          content='SSSiGram is a versatile tool designed to assist you with downloading Instagram videos, Reels, photos, IGTV, and albums. Whether you are using a mobile device, tablet, or computer, SSSiGram makes the process quick and easy. Enjoy seamless downloads of your favorite Instagram content on any device with SSSiGram.'
         />
         <meta
           name='keywords'
-          content='home, react, SEO'
+          content='SSSiGram, Instagram video downloader, Download Instagram videos, IG video downloader, Save Instagram videos, Instagram reel downloader, Download IGTV videos, Instagram story downloader, Instagram video save, Download Instagram reel, Free Instagram video downloader, Online Instagram video downloader, Instagram video saver, Instagram post downloader, Download videos from Instagram, Instagram video download online free, Insta video downloader, Instagram download HD videos, IG video download, Instagram clip downloader.'
         />
       </Helmet>
       <div className='flex flex-col items-center justify-center'>
         <Header
-          heading='Download Content from Instagram'
-          desc='Video, Pictures, Reels, Stories etc.'
+          heading='SSSiGram - Instagram Free Downloader'
+          desc='Download Instagram Video, Story, Photo, Reels, etc on SSSiGram.'
         />
         {instagramState.loading ? (
           <BodyContainer>
@@ -67,7 +70,7 @@ const App = () => {
                 </div>
                 <div className='flex flex-col gap-5 w-full'>
                   <Link
-                    to={instagramState.downloadObj?.url[0]?.url}
+                    to={instagramState.downloadObj.url[0]?.url}
                     className='inline-flex items-center w-full justify-center py-4 px-3 text-sm  text-white bg-gradient-to-br from-blue-700 to-blue-500 rounded-md  hover:bg-gradient-to-br hover:from-[#c73a3a] hover:from-10% hover:via-[#7554a7] hover:via-60% hover:to-[#3f73e4] hover:to-100% focus:ring-4 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
                     <FaDownload
                       size={24}
@@ -89,7 +92,7 @@ const App = () => {
             </div>
           </BodyContainer>
         ) : instagramState.error != "" &&
-          instagramState.downloadObj?.url[0]?.url === "" ? (
+          instagramState.downloadObj.url[0]?.url === "" ? (
           <BodyContainer>
             <div className='m-8'>
               <p className='font-semibold text-xl sm:text-2xl md:text-3xl text-red-500 text-center mb-5'>
@@ -110,23 +113,22 @@ const App = () => {
           <BodyContainer>
             <div className='flex flex-col gap-1.5 items-center my-6'>
               <h3 className='text-4xl font-bold mb-4 text-violet-700'>
-                Download Instagram IGTV Videos
+                Download Instagram IGTV Videos Free
               </h3>
               <p className='text-lg'>
-                Downloading Instagram videos with the IGTV video downloader is
-                easy, fast, and time-saving. When browsing through Instagram or
-                coming across a post with an IGTV video you want to download,
-                simply copy the URL of that IGTV video and paste it into the
-                designated field on the iGram page. Finally, click the Download
-                button. That's it!
+                Downloading Instagram Videos using the IGTV Video Downloader is
+                quick, efficient, and convenient. When you find an IGTV video on
+                Instagram that you want to save, just copy the video's URL and
+                paste it into the specified field on the SSSiGram website. Then,
+                Click the Download Button. It's that simple!
               </p>
             </div>
             {/* How to download section start */}
             <div>
-              <Heading>HOW TO DOWNLOAD ANYTHING FROM INSTAGRAM?</Heading>
+              <Heading>HOW TO DOWNLOAD ANY CONTENT FROM INSTAGRAM?</Heading>
               <p className='text-lg text-center'>
-                Below are the three easy and quickest steps to download an
-                Instagram Anything:
+                Here are Three Simple and Fastest Steps to Download anything
+                From Instagram:
               </p>
             </div>
             <HowToDownload data={howToDownloadData} />
