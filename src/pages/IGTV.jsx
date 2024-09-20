@@ -45,7 +45,7 @@ const IGTV = () => {
               color='#7554a7'
             />
           </BodyContainer>
-        ) : instagramState.downloadObj.video != "" &&
+        ) : instagramState.downloadObj.url[0]?.url != "" &&
           instagramState.error === "" ? (
           // download card
           <BodyContainer>
@@ -67,7 +67,7 @@ const IGTV = () => {
                 </div>
                 <div className='flex flex-col gap-5 w-full'>
                   <Link
-                    to={instagramState.downloadObj.video}
+                    to={instagramState.downloadObj.url[0]?.url}
                     className='inline-flex items-center w-full justify-center py-4 px-3 text-sm  text-white bg-gradient-to-br from-blue-700 to-blue-500 rounded-md  hover:bg-gradient-to-br hover:from-[#c73a3a] hover:from-10% hover:via-[#7554a7] hover:via-60% hover:to-[#3f73e4] hover:to-100% focus:ring-4 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
                     <FaDownload
                       size={24}
@@ -89,7 +89,7 @@ const IGTV = () => {
             </div>
           </BodyContainer>
         ) : instagramState.error != "" &&
-          instagramState.downloadObj.video === "" ? (
+          instagramState.downloadObj.url[0]?.url === "" ? (
           <BodyContainer>
             <div className='m-8'>
               <p className='font-semibold text-xl sm:text-2xl md:text-3xl text-red-500 text-center mb-5'>

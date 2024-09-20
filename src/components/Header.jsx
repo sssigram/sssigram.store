@@ -17,8 +17,33 @@ const Header = ({ heading, desc }) => {
   // to handle change of input
   const [inputURL, setInputURL] = useState("");
   const handleChange = (event) => {
-    if (instagramState.downloadObj.video != "")
-      dispatch({ type: "SET", payload: "" });
+    if (instagramState.downloadObj.url[0].url != "")
+      dispatch({
+        type: "SET",
+        payload: {
+          url: [
+            {
+              url: "",
+              name: "",
+              type: "",
+              ext: "",
+            },
+          ],
+          thumb: "",
+          sd: null,
+          meta: {
+            title: "",
+            source: "",
+            shortcode: "",
+            comment_count: 0,
+            like_count: 0,
+            taken_at: 0,
+          },
+          hosting: "",
+          hd: null,
+          timestamp: 0,
+        },
+      });
     setInputURL(event.target.value);
   };
   //show or hide popup
@@ -42,6 +67,7 @@ const Header = ({ heading, desc }) => {
     const text = await navigator.clipboard.readText();
     setInputURL(text);
   };
+  console.log(instagramState.downloadObj.url[0]);
   return (
     <>
       <Popup
