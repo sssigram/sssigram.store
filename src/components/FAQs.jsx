@@ -8,7 +8,6 @@ const FAQs = ({ data }) => {
   const [selected, setSelected] = useState("");
   //to close and open faqs
   const selectFAQ = (index) => {
-    console.log(index, selected);
     if (selected === index) return setSelected("");
     return setSelected(index);
   };

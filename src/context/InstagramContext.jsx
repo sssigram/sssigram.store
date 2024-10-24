@@ -18,7 +18,6 @@ const InstagramContextProvider = ({ children }) => {
 
       case "SET":
         return produce(state, (draft) => {
-          console.log(action.payload);
           draft.downloadObj = action.payload;
         });
         break;
@@ -31,27 +30,13 @@ const InstagramContextProvider = ({ children }) => {
         return produce(state, (draft) => {
           draft.inputURL = "";
           draft.downloadObj = {
-            url: [
-              {
-                url: "",
-                name: "",
-                type: "",
-                ext: "",
-              },
-            ],
-            thumb: "",
-            sd: null,
-            meta: {
-              title: "",
-              source: "",
-              shortcode: "",
-              comment_count: 0,
-              like_count: 0,
-              taken_at: 0,
-            },
+            error: false,
             hosting: "",
-            hd: null,
-            timestamp: 0,
+            shortcode: "",
+            caption: "",
+            type: "",
+            download_url: "",
+            thumb: "",
           };
           draft.loading = false;
           draft.error = "";
@@ -65,27 +50,13 @@ const InstagramContextProvider = ({ children }) => {
   const [instagramState, dispatch] = useReducer(InstagramReducer, {
     inputURL: "",
     downloadObj: {
-      url: [
-        {
-          url: "",
-          name: "",
-          type: "",
-          ext: "",
-        },
-      ],
-      thumb: "",
-      sd: null,
-      meta: {
-        title: "",
-        source: "",
-        shortcode: "",
-        comment_count: 0,
-        like_count: 0,
-        taken_at: 0,
-      },
+      error: false,
       hosting: "",
-      hd: null,
-      timestamp: 0,
+      shortcode: "",
+      caption: "",
+      type: "",
+      download_url: "",
+      thumb: "",
     },
     loading: false,
     error: "",
@@ -94,26 +65,21 @@ const InstagramContextProvider = ({ children }) => {
   // async downloader function
   const getDownloadURL = async (inputURL) => {
     dispatch({ type: "LOADING", payload: true });
-    // const serverURL = "/instagram";
-    // const headers = {
-    //   "Content-Type": "application/x-www-form-urlencoded",
-    // };
-    // const data = { url: inputURL };
+
     const options = {
       method: "GET",
-      url: "https://instagram-post-and-reels-downloader.p.rapidapi.com/download/",
+      url: "https://full-downloader-social-media.p.rapidapi.com/",
       params: {
         url: inputURL,
       },
       headers: {
         "x-rapidapi-key": "1b7dc89b38msha19da7d84c9af6ep130cbbjsn6b35764d0ccc",
-        "x-rapidapi-host": "instagram-post-and-reels-downloader.p.rapidapi.com",
+        "x-rapidapi-host": "full-downloader-social-media.p.rapidapi.com",
       },
     };
 
     try {
       const response = await axios.request(options);
-      console.log(response.data);
       if (response.data) {
         dispatch({ type: "SET", payload: response.data });
       } else {
@@ -126,19 +92,6 @@ const InstagramContextProvider = ({ children }) => {
     }
     dispatch({ type: "LOADING", payload: false });
 
-    // await axios
-    //   .get(
-    //     "https://api.bhawanigarg.com/social/instagram/?url=https://www.instagram.com/reels/C5_B7NetFoR/"
-    //   )
-    //   .then((res) => {
-    //     console.log(res);
-    // if (JSON.parse(res.data).hasOwnProperty("video")) {
-    //   dispatch({ type: "SET", payload: JSON.parse(res.data) });
-    // } else if (JSON.parse(res.data).hasOwnProperty("error")) {
-    //   dispatch({ type: "ERROR", payload: JSON.parse(res.data).error });
-    // }
-    // dispatch({ type: "LOADING", payload: false });
-    // });
     return;
   };
 

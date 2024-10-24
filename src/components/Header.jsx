@@ -17,31 +17,17 @@ const Header = ({ heading, desc }) => {
   // to handle change of input
   const [inputURL, setInputURL] = useState("");
   const handleChange = (event) => {
-    if (instagramState.downloadObj.url[0]?.url != "")
+    if (instagramState.downloadObj.download_url != "")
       dispatch({
         type: "SET",
         payload: {
-          url: [
-            {
-              url: "",
-              name: "",
-              type: "",
-              ext: "",
-            },
-          ],
-          thumb: "",
-          sd: null,
-          meta: {
-            title: "",
-            source: "",
-            shortcode: "",
-            comment_count: 0,
-            like_count: 0,
-            taken_at: 0,
-          },
+          error: false,
           hosting: "",
-          hd: null,
-          timestamp: 0,
+          shortcode: "",
+          caption: "",
+          type: "",
+          download_url: "",
+          thumb: "",
         },
       });
     setInputURL(event.target.value);
