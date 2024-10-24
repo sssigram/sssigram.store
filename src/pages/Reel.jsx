@@ -45,8 +45,8 @@ const Reel = () => {
               color='#7554a7'
             />
           </BodyContainer>
-        ) : instagramState.downloadObj.url[0]?.url != "" &&
-          instagramState.error === "" ? (
+        ) : instagramState.downloadObj.download_url != "" &&
+          instagramState.downloadObj.error === false ? (
           // download card
           <BodyContainer>
             <div className='bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full flex flex-col items-center md:items-stretch md:flex-row justify-center gap-10 m-5 p-5 md:px-0'>
@@ -67,7 +67,7 @@ const Reel = () => {
                 </div>
                 <div className='flex flex-col gap-5 w-full'>
                   <Link
-                    to={instagramState.downloadObj.url[0]?.url}
+                    to={instagramState.downloadObj.download_url}
                     className='inline-flex items-center w-full justify-center py-4 px-3 text-sm  text-white bg-gradient-to-br from-blue-700 to-blue-500 rounded-md  hover:bg-gradient-to-br hover:from-[#c73a3a] hover:from-10% hover:via-[#7554a7] hover:via-60% hover:to-[#3f73e4] hover:to-100% focus:ring-4 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
                     <FaDownload
                       size={24}
@@ -88,8 +88,8 @@ const Reel = () => {
               </div>
             </div>
           </BodyContainer>
-        ) : instagramState.error != "" &&
-          instagramState.downloadObj.url[0]?.url === "" ? (
+        ) : instagramState.downloadObj.error === true &&
+          instagramState.downloadObj.download_url === "" ? (
           <BodyContainer>
             <div className='m-8'>
               <p className='font-semibold text-xl sm:text-2xl md:text-3xl text-red-500 text-center mb-5'>
